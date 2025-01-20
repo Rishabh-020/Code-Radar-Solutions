@@ -6,7 +6,7 @@ char* welcome() {
 
 int main() {
     int num;
-    scanf("%d",&num);
+    scanf("ASCII Value: %d",&num);
     printf("%d",num);
     return 0;
 }
