@@ -7,7 +7,11 @@ int main() {
     if(c=='+'){
         printf("%d",a+b);
     }else if(c=='-'){
-        printf("%d",a-b);
+        if(a>b){
+        printf("%d",a-b);}
+        else{
+            printf("%d",b-a);
+        }
     }else if(c=='*'){
         printf("%d",a*b);
     }else if(c=='/'){
