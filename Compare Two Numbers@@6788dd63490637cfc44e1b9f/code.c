@@ -9,7 +9,7 @@ int main() {
     }else if(a>b){
         printf("First");
     }else if(a<b){
-        printf("Secound");
+        printf("Second");
     }
     return 0;
 }
