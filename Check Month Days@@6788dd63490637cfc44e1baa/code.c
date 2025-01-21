@@ -7,13 +7,14 @@ char* welcome() {
 int main() {
     int num;
     scanf("%d",&num);
-    switch(num){
-        case 1,3,5,7,8,10,12:
-        printf(31);
-        case 2:
-        printf(28);
-        case 4,6,9,11:
-        printf(30);
+    if(num==1||num==3||num==5||num==7||num==8||num==10||num==12){
+        printf("%d",31);
+    }else if(num==2){
+        printf("%d",28);
+    }else if(num==4||num==6||num==9||num==11){
+        printf("%d",30);
+    }else{
+        printf("Invalid month");
     }
     return 0;
 }
