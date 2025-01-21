@@ -27,6 +27,5 @@ int main() {
         printf("Sunday");
         break;
     }
-    printf("%s", welcome());
     return 0;
 }
