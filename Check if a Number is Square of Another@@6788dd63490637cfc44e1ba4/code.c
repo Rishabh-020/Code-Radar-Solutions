@@ -1,9 +1,10 @@
 #include <stdio.h>
 
 int main() {
-    int a,b;
+    int a,b,pro;
     scanf("%d %d",&a,&b);
-    if(a*a==b){
+    pro=a*a;
+    if(pro==b){
         printf("Yes");
     }else{
         printf("No");
