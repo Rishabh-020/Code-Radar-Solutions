@@ -9,7 +9,7 @@ int main() {
             printf("*");
         }
         for(int j=1;j<=num-1;j++){
-            if(j<=num-i){
+            if(j<=num-i-1){
                 printf(" ");
             }else{
                 printf("*");
