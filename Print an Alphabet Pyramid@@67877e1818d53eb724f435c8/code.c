@@ -12,6 +12,5 @@ int main() {
             ch++;
         }
     }
-    printf("%s", welcome());
     return 0;
 }
