@@ -8,8 +8,8 @@ int main() {
         for(int k=1;k<=i;k++){
             printf("*");
         }
-        for(int j=2;j<=num-1;j++){
-            if(j<=num-i-1){
+        for(int j=2;j<=num;j++){
+            if(j<=num-i){
                 printf(" ");
             }else{
                 printf("*");
