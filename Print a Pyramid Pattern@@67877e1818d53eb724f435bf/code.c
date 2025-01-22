@@ -5,16 +5,17 @@ int main() {
     int num;
     scanf("%d",&num);
     for(int i=1;i<=num;i++){
-        for(int k=1;k<=i;k++){
-            printf("*");
-        }
-        for(int j=2;j<=num;j++){
-            if(j<=num-i+1){
+        for(int j=1;j<=num;j++){
+            if(j<=num-i){
                 printf(" ");
             }else{
                 printf("*");
             }
-        }        
+        }
+        for(int k=2;k<=i;k++){
+            printf("*");
+        }
+        
         printf("\n");
     }
     return 0;
