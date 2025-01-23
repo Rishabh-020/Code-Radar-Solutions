@@ -9,8 +9,8 @@ int main() {
             printf("m");
         }
         for(int k=1;k<=num-1;k++){
-            printf("%d",a);
-            a++;
+            printf("%d",i);
+            i--;
         }
         printf("\n");
     }
