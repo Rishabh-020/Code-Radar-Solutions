@@ -4,7 +4,7 @@
 int main() {
     int num,a=1;
     scanf("%d",&num);
-    for(int i=1;i<=num;i++){
+    for(int i=0;i<=num;i++){
         for(int j=0;j<=num;j++){
             if(j<num-i){
                 printf(" ");
