@@ -8,7 +8,6 @@ int main() {
             printf("%d ",k);
             k++;
         }
-        k++;
         printf("\n");
     }
     return 0;
