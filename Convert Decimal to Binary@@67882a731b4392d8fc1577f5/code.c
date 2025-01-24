@@ -2,8 +2,8 @@
 
 
 int main() {
-    int num,binary[32],index=0;
-    scanf("%d",&num);
+    int n,binary[32],index=0;
+    scanf("%d",&n);
     if(n==0){
         printf("0");
     }
