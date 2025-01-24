@@ -1,6 +1,4 @@
 #include <stdio.h>
-
-
 int main() {
     int n,binary[32],index=0;
     scanf("%d",&n);
