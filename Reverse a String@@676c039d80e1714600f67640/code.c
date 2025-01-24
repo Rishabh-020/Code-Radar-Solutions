@@ -11,6 +11,6 @@ void rev(char arr[]){
 int main() {
     char arr[100];
     scanf("%s",&arr[]);
-    rev(arr[]);
+    rev(arr);
     return 0;
 }
