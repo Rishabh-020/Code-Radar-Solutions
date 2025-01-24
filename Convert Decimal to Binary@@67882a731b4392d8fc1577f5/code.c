@@ -12,7 +12,7 @@ int main() {
         n=n/2;
         index++;
     }
-    for(int i=0;i<=index;i++){
+    for(int i=index-1;i>=0;i++){
         printf("%d",binary[i]);
     }
     return 0;
