@@ -7,7 +7,7 @@ int main() {
     for(int i=0;i<num;i++){
         scanf("%d\n",arr[i]);
     }
-    
+    printf("e");
 
     return 0;
 }
