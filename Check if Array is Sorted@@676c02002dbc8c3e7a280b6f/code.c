@@ -13,7 +13,7 @@ int main() {
             break;
         }
     }
-    if(mai){
+    if(Sorted){
         printf("Sorted");
     }else{
         printf("Not Sorted");
