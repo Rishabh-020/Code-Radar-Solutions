@@ -11,7 +11,6 @@ int main() {
    for(int i=0;i,num;i++){
     if(arr[i]==target){
         printf("%d",i);
-        return 0;
     }
    }
    printf("%d",-1);
