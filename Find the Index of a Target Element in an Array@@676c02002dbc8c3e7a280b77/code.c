@@ -13,6 +13,5 @@ int main() {
         printf("%d",i);
     }
    }
-   printf("%d",-1);
     return 0;
 }
