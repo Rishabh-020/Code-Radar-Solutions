@@ -18,9 +18,9 @@ int main() {
         }
     }
     if(sec_largest==INT_MIN){
-    printf("%d",-1);}
-    else{
-        printf("%d",sec_largest)
+        printf("%d",-1);
+    }else{
+        printf("%d",sec_largest);
     }
     return 0;
 }
