@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include<limit.h>
+
+
+int main() {
+    int num;
+    scanf("%d",&num);
+    int arr[num];
+    for(int i=0;i<num;i++){
+        scanf("%d",&num);
+    }
+    int largest=INT_MIN,sec_largest=INT_MIN;
+    for(int i=0;i<num;i++){
+        if(arr[i]>largest){
+            largest=arr[i];
+        }else if(arr[i]> sec_largest && arr[i]!=largest){
+            sec_largest=arr[i];
+        }
+    }
+    printf("%d",sec_largest);
+    return 0;
+}
