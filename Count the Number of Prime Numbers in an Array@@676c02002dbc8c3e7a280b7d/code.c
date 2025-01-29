@@ -19,14 +19,15 @@ int  prime(int num){
 }
 
 int main() {
-    int num,count=0;
+    int num,count=0,number;
     scanf("%d",&num);
     int arr[num];
     for(int i=0;i<num;i++){
         scanf("%d",&num);
     }
     for(int i=0;i<num;i++){
-        if(prime(arr[i])){
+        number=arr[i]
+        if(prime(number)){
             count++;
         }
     }
