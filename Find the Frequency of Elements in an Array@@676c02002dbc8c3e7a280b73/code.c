@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 void find_freq(int arr[],int n){
     int visited[n];
     for(int i=0;i<n;i++){
