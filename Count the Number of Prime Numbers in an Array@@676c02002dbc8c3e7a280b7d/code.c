@@ -18,6 +18,15 @@ int  prime(int num){
     return 1;
 }
 
+void count(int arr[],int n){
+    int count=0;
+    for(int i=0;i<num;i++){
+        if(prime(arr[i])){
+            count++;
+        }
+    }
+    printf("%d",count);
+}
 int main() {
     int num,count=0,number;
     scanf("%d",&num);
@@ -25,12 +34,6 @@ int main() {
     for(int i=0;i<num;i++){
         scanf("%d",&num);
     }
-    for(int i=0;i<num;i++){
-        number=arr[i]
-        if(prime(number)){
-            count++;
-        }
-    }
-    printf("%d",count);
+    count(arr,num);
     return 0;
 }
