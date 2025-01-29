@@ -18,9 +18,9 @@ int main() {
         scanf("%d",&arr[i]);
     }
     if(rev_array(arr,num)){
-        printf("YES");
-    }else{
         printf("NO");
+    }else{
+        printf("YES");
     }
     return 0;
 }
