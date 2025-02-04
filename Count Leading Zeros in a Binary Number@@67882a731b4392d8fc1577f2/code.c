@@ -3,10 +3,12 @@
 int main() {
     int num,count=0;
     scanf("%d",&num);
-    while(num%2==0 && num!=0){
+    for(int i=31;i>=0;i--){
+        if((num>>i)&1){
+            break;
+        }
         count++;
-        num=num/2;
     }
-    printf("%d",31-count);
+    printf("%d",count);
     return 0;
 }
