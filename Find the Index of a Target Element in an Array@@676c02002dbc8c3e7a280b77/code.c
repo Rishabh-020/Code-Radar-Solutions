@@ -11,6 +11,7 @@ int main() {
    for(int i=0;i<num;i++){
     if(arr[i]==target){
         main=i;
+        break;
     }
    }
    if(main!=0){
