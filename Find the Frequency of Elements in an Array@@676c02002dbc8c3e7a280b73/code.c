@@ -8,11 +8,9 @@ void printFrequency(int arr[], int n) {
         freq[arr[i]]++;
     }
     
-    // Print frequency of each number
-    printf("Number - Frequency\n");
     for (int i = 0; i < 1000; i++) {
         if (freq[i] > 0) {
-            printf("%d - %d\n", i, freq[i]);
+            printf("%d %d\n", i, freq[i]);
         }
     }
 }
