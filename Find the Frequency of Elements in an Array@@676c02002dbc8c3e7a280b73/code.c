@@ -18,10 +18,10 @@ void printFrequency(int arr[], int n) {
 }
 
 int main() {
-    int arr[] = {1, 2, 3, 2, 1, 5, 1, 3, 7, 2};
-    int n = sizeof(arr) / sizeof(arr[0]);
-    
-    printFrequency(arr, n);
+    int num;
+    scanf("%d",&num);
+    int arr[num];
+    printFrequency(arr, num);
     
     return 0;
 }
