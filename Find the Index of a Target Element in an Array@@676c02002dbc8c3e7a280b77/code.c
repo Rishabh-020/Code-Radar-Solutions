@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int main() {
    int num,target,main=0;
    scanf("%d",&num);
@@ -11,7 +10,7 @@ int main() {
    for(int i=0;i<num;i++){
     if(arr[i]==target){
         main=i;
-        continue;
+        break;
     }
    }
    if(main!=0){
