@@ -13,6 +13,10 @@ int main() {
         main=i;
     }
    }
-   printf("%d",main);
+   if(main!=0){
+   printf("%d",main);}
+   else{
+    printf("-1");
+   }
     return 0;
 }
