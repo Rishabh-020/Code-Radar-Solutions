@@ -6,11 +6,7 @@ int main() {
     for(int i=0;i<num;i++){
         scanf("%d",arr[i]);
     }
-    for(int i=1;i<num-1;i++){
-        if(arr[i]>arr[i+1] && arr[i-1]<arr[i]){
-            printf("%d",arr[i]);
-        }
-    }
+    
     
 
     return 0;
