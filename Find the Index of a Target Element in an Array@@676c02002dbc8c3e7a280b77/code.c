@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 int main() {
-   int num;
+   int num,target;
    scanf("%d",&num);
    int arr[num];
-   int target;
    for(int i=0;i<num;i++){
     scanf("%d ",&arr[i]);
    }
+   scanf("%d",&target);
    
    
     return 0;
