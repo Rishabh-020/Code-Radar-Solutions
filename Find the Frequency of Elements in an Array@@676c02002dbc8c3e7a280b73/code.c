@@ -1,30 +1,27 @@
 #include <stdio.h>
 
-void find_freq(int arr[],int n){
-    int visited[n];
-    for(int i=0;i<n;i++){
-        visited[i]=0;
+void printFrequency(int arr[], int n) {
+    int freq[1000] = {0}; // Assuming numbers are within a reasonable range
+    
+    // Count frequency of each number
+    for (int i = 0; i < n; i++) {
+        freq[arr[i]]++;
     }
-    for(int i=0;i<n;i++){
-        if(visited[i]==1)continue;
-        int count=1;
-        for(int j=i+1;j<n;j++){
-            if(arr[i]==arr[j]){
-                count++;
-                visited[i]=1;
-            }
+    
+    // Print frequency of each number
+    printf("Number - Frequency\n");
+    for (int i = 0; i < 1000; i++) {
+        if (freq[i] > 0) {
+            printf("%d - %d\n", i, freq[i]);
         }
-        printf("%d %d\n",arr[i],count);
     }
 }
 
 int main() {
-    int num;
-    scanf("%d",&num);
-    int arr[num];
-    for(int i=0;i<num;i++){
-        scanf("%d",arr[i]);
-    }
-    find_freq(arr,num);
+    int arr[] = {1, 2, 3, 2, 1, 5, 1, 3, 7, 2};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    
+    printFrequency(arr, n);
+    
     return 0;
 }
