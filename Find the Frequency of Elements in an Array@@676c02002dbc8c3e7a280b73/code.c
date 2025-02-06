@@ -19,12 +19,11 @@ void printFrequency(int arr[], int n) {
 
 int main() {
     int num;
-    printf("Enter the number of elements: ");
     scanf("%d", &num);
 
     int arr[num];  // Variable-length array (VLA)
     
-    printf("Enter %d elements:\n", num);
+    
     for (int i = 0; i < num; i++) {
         scanf("%d", &arr[i]);  // Read user input into the array
     }
