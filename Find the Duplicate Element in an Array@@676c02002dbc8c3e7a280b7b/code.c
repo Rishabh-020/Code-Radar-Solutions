@@ -2,9 +2,11 @@
 
 void duplicate(int arr[],int num){
     for(int i=1;i<num;i++){
-        if(arr[i]==arr[i-1]){
-            printf("%d",arr[i]);
-            break;
+        for(int j=i;j<num;j++){
+            if(arr[i]==arr[j]){
+                printf("%d",arr[j]);
+                break;
+            }
         }
     }
 }
