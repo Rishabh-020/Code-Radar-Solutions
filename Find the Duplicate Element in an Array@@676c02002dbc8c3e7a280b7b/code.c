@@ -4,7 +4,7 @@ void duplicate(int arr[],int num){
     for(int i=1;i<num;i++){
         for(int j=i;j<num;j++){
             if(arr[i]==arr[j]){
-                printf("%d ",arr[j]);
+                printf("%d ",arr[i]);
                 break;
             }
         }
