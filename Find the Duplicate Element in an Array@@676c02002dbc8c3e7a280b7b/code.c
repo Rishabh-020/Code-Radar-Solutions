@@ -7,6 +7,7 @@ void duplicate(int arr[],int num){
                 printf("%d ",arr[i]);
                 break;
             }
+            break;
         }
     }
 }
