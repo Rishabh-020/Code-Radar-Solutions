@@ -1,13 +1,16 @@
 #include <stdio.h>
+
 void printFrequency(int arr[], int n) {
-    int freq[1000] = {0};
+    int freq[1001] = {0};
+    int unique[n], uniqueCount = 0;  
     for (int i = 0; i < n; i++) {
+        if (freq[arr[i]] == 0) {
+            unique[uniqueCount++] = arr[i];
+        }
         freq[arr[i]]++;
     }
-    for (int i = 0; i < 1000; i++) {
-        if (freq[i] > 0) {
-            printf("%d %d\n", i, freq[i]);
-        }
+    for (int i = 0; i < uniqueCount; i++) {
+        printf("%d %d\n", unique[i], freq[unique[i]]);
     }
 }
 int main() {
