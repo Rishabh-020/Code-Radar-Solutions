@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 void duplicate(int arr[],int num){
-    for(int i=1;i<num;i++){
-        for(int j=i;j<num;j++){
+    for(int i=0;i<num-1;i++){
+        for(int j=i+1;j<num;j++){
             if(arr[i]==arr[j]){
                 printf("%d ",arr[i]);
                 break;
