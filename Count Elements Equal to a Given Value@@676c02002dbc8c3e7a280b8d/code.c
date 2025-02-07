@@ -1,13 +1,13 @@
 #include <stdio.h>
-void check(int arr[],int num,int tg){
-    int coun=0;
-    for(int i=0;i<num;i++){
-        if(arr[i]>=tg){
-            count++;
-        }
-    }
-    printf("%d",count);
-}
+// void check(int arr[],int num,int tg){
+//     int coun=0;
+//     for(int i=0;i<num;i++){
+//         if(arr[i]>=tg){
+//             count++;
+//         }
+//     }
+//     printf("%d",count);
+// }
 
 int main() {
     int num,target;
