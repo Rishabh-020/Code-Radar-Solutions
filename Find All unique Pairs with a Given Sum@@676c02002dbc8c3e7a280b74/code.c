@@ -16,7 +16,7 @@ int main() {
     for(int i=0;i<num;i++){
         scanf("%d ",&arr[i]);
     }
-    // scanf("%d",&target);
+    scanf("%d",&target);
     // find_sum(arr,num);
     // return 0;
 }
