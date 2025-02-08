@@ -16,7 +16,6 @@ void printPalindromeTriangle(int n) {
 }
 int main() {
     int n;
-    printf("Enter the number of rows: ");
     scanf("%d", &n);
     printPalindromeTriangle(n);
     return 0;
