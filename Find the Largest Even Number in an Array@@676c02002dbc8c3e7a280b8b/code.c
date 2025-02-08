@@ -14,6 +14,7 @@ void even_arr(int arr[],int num){
             break;
         }
     }
+    printf("%d",-1);
 }
 
 int main() {
