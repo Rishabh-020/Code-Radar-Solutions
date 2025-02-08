@@ -2,14 +2,12 @@
 void find_sum(int arr[],int num,int target){
     int found=0;
     int hash[10000] = {0};
-    for (int i = 0; i < num; i++) {
-        int complement = target - arr[i];
-
-        if (hash[complement]) { // If complement exists in hash array
-            printf("%d %d\n", complement, arr[i]);
-            hash[complement] = 0; // Avoid duplicate pairs
-        } else {
-            hash[arr[i]] = 1; // Mark current number as seen
+    for(int i=0;i<num-1;i++){
+        for(int j=i+1;j<num;j++){
+            if(arr[i]+arr[j]==target){
+                printf("%d %d\n",arr[i],arr[j]);
+                found=1;
+            }
         }
     }
 }
