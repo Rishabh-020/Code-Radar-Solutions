@@ -6,8 +6,8 @@ void find_sum(int arr[],int num,int target){
                 printf("%d %d\n",arr[i],arr[j]);
                 break;
             }break;
-        }
-    }break;
+        }break;
+    }
 }
 int main() {
     int num;
