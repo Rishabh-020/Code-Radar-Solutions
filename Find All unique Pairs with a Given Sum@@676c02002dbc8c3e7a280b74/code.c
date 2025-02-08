@@ -4,8 +4,8 @@ void find_sum(int arr[],int num,int target){
         for(int j=i+1;j<num;j++){
             if(arr[i]+arr[j]==target){
                 printf("%d %d\n",arr[i],arr[j]);
-            }break;
-        }
+            }
+        }break;
     }
 }
 int main() {
