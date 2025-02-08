@@ -8,7 +8,12 @@ void even_arr(int arr[],int num){
             scam++;
         }
     }
-    printf("%d",scam);
+    for(int i=0;i<scam-1;i++){
+        if(arr[i]>arr[i+1]){
+            printf("%d",arr[i]);
+            break;
+        }
+    }
 }
 
 int main() {
