@@ -9,8 +9,8 @@ void even_arr(int arr[],int num){
         }
     }
     for(int i=0;i<scam-1;i++){
-        if(arr[i]>arr[i+1]){
-            finaly=arr[i];
+        if(even[i]>even[i+1]){
+            finaly=even[i];
             break;
         }
     }
