@@ -1,12 +1,12 @@
 #include <stdio.h>
-void find_sum(int arr[num],int num){
+void find_sum(int arr[],int num,int target){
     for(int i=0;i<num-1;i++){
-        // for(int j=i+1;j<num;j++){
-        //     if(arr[i]+arr[j]==target){
-        //         printf("%d %d",arr[i],arr[j]);
-        //         continue;
-        //     }
-        // }
+        for(int j=i+1;j<num;j++){
+            if(arr[i]+arr[j]==target){
+                printf("%d %d",arr[i],arr[j]);
+                continue;
+            }
+        }
     }
 }
 int main() {
@@ -17,6 +17,6 @@ int main() {
         scanf("%d ",&arr[i]);
     }
     scanf("%d",&target);
-    find_sum(arr,num);
+    find_sum(arr,num,target);
     return 0;
 }
