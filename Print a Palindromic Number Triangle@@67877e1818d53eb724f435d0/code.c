@@ -1,19 +1,24 @@
+
 #include <stdio.h>
-int main() {
-    int num;
-    scanf("%d",&num);
-    for(int i=1;i<=num;i++){
-        for(int j=1;j<=num;j++){
-            if(j>=num-i){
-                printf(" ");
-            }else{
-                printf("%d",j);
-            }
+void printPalindromeTriangle(int n) {
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= n - i; j++) {
+            printf(" ");
         }
-        for(int k=2;k<=num;k++){
-            printf("%d",i);
+        for (int j = 1; j <= i; j++) {
+            printf("%d", j);
+        }
+        for (int j = i - 1; j >= 1; j--) {
+            printf("%d", j);
         }
         printf("\n");
     }
+}
+int main() {
+    int n;
+    printf("Enter the number of rows: ");
+    scanf("%d", &n);
+    printPalindromeTriangle(n);
     return 0;
 }
+
