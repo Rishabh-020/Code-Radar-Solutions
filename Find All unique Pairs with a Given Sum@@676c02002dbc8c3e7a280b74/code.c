@@ -6,8 +6,6 @@ void find_sum(int arr[],int num,int target){
        if(hash[complain]){
         printf("%d %d\n",complain,arr[i]);
         hash[complain]=0;
-       }else{
-        hash[complain]=1;
        }
     }
 }
