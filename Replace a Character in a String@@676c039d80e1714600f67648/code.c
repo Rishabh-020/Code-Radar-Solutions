@@ -3,6 +3,6 @@
 int main(){
     char arr[1000];
     scanf("%s",&str);
-    priintf("%s",str);
+    printf("%s",str);
     return 0;
 }
