@@ -11,13 +11,22 @@ char palindrome(char arr[]){
     if(len==1){
         printf("Yes");
         return 0;
-    }
-    for(int i=0;i<len/2;i++){
+    }if(len%2==0){
+        for(int i=0;i<len/2;i++){
         if(arr[i]==arr[end]){
             ma=1;
         }else{
             ma=0;
         }
+    }
+    }else{
+        for(int i=0;i<(len-1)/2;i++){
+        if(arr[i]==arr[end]){
+            ma=1;
+        }else{
+            ma=0;
+        }
+    }
     }
     if(ma==1){
         printf("Yes");
