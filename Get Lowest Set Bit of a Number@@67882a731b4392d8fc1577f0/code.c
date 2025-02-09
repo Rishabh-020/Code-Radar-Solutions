@@ -1,16 +1,12 @@
 #include <stdio.h>
 
 int main() {
-    int num,pos=1;
-    scanf("%d",&num);
-     if (num == 0) {
-        printf("%d",0);
-        return 0;
-    }
-    while(!(num&1)){
+    int num1,position=1;
+    scanf("%d",&num1);
+    while((num&1)==0){
         num>>=1;
-        pos++;
+        position++;
     }
-    printf("%d",pos);
+    printf("%d",position);
     return 0;
 }
