@@ -5,9 +5,9 @@ int main(){
     scanf("%s",str);
     scanf("%c",&num1);
     scanf("%c",&num2);
-    for(int i=0;i!='\n';i++){
-        if(str[i]=='num1'){
-            str[i]='num2';
+    for(int i=0;i!='\0';i++){
+        if(str[i]==num1){
+            str[i]=num2;
         }
     }
     printf("%s",str);
