@@ -3,6 +3,6 @@
 
 int main() {
     char arr[1000];
-    printf("%d",strlen(arr));
+    printf("%d",strlen(arr)-1);
     return 0;
 }
