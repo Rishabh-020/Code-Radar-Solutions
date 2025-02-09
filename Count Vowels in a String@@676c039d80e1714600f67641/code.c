@@ -8,7 +8,7 @@ void find_vowel(char arr[]){
         len--;
     }
     int count=0;
-    for(int i=0;i<=len-1;i++){
+    for(int i=0;i<len-1;i++){
         if(arr[i]=="a"||arr[i]=="e"||arr[i]=="i"||arr[i]=="o"||arr[i]=="u"
          ||arr[i]=="A"||arr[i]=="E"||arr[i]=="I"||arr[i]=="O"||arr[i]=="U"){
             count++;
