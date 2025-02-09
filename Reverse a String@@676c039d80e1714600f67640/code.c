@@ -9,6 +9,7 @@ void rev_string(char arr[],int num){
 int main(){
     char arr[1000];
     scanf("%s",arr[1000]);
+    printf("%s",arr[1000]);
     int len=sizeof(arr)/sizeof(arr[0]);
     rev_string(arr,len);
     return 0;
