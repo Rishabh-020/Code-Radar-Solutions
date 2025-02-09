@@ -3,7 +3,11 @@
 
 int main() {
     char arr[1000];
-    scanf("%s",&arr);
-    printf("%lu",strlen(arr)-1);
+    int len=0;
+    fgets(arr,1000,stdin);
+    while(arr[len]!='\0' && arr[len]!='\n'){
+        len++;
+    }
+    printf("%d",len);
     return 0;
 }
