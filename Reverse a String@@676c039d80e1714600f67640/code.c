@@ -2,7 +2,7 @@
 #include<string.h>
 
 void rev_string(char arr[]){
-    for(int i='\0';i>=0;i--){
+    for(int i='\n';i>=0;i--){
         printf("%c",arr[i]);
     }
 }
