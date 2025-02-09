@@ -22,5 +22,8 @@ void palindrome(char arr[]){
     }
 }
 int main() {
+    char arr[1000];
+    fgets(arr,sizeof(arr),stdin);
+    palindrome(arr);
     return 0;
 }
