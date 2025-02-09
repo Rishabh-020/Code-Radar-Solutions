@@ -22,6 +22,7 @@ char palindrome(char arr[]){
     }else{
         for(int i=0;i<(len-1)/2;i++){
         if(arr[i]==arr[end]){
+            end--;
             ma=1;
         }else{
             ma=0;
