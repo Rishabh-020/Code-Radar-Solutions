@@ -1,16 +1,15 @@
 #include <stdio.h>
 #include<string.h>
 
-void rev_string(char arr[],int num){
-    for(int i=num;i>=0;i--){
-        printf("%c",arr[num]);
+void rev_string(char arr[]){
+    for(int i='\0';i>=0;i--){
+        printf("%c",arr[i]);
     }
 }
 int main(){
     char arr[1000];
     scanf("%s",arr);
     printf("%s",arr);
-    int len=sizeof(arr)/sizeof(arr[0]);
-    rev_string(arr,len);
+    rev_string(arr);
     return 0;
 }
