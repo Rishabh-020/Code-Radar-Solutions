@@ -8,10 +8,10 @@ int main() {
         arr[len1 - 1] = '\0';
     }
     fgets(arr1,sizeof(arr1),stdin);
-    int len2=strlen(arr1);
-      if (len2 > 0 && arr1[len2 - 1] == '\n') {
-        arr1[len2 - 1] = '\0';
-    }
+    // int len2=strlen(arr1);
+    //   if (len2 > 0 && arr1[len2 - 1] == '\n') {
+    //     arr1[len2 - 1] = '\0';
+    // }
     printf("%s%s",arr,arr1);
     return 0;
 }
