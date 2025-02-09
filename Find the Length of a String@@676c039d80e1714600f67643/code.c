@@ -7,7 +7,7 @@ int main() {
     fgets(arr,1000,stdin);
     if(arr[0]=='\n'){
         printf("0");
-        break;
+        return 0;
     }
     while(arr[len]!='\0' && arr[len]!='\n'){
         len++;
