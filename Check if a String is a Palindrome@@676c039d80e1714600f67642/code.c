@@ -7,37 +7,19 @@ char palindrome(char arr[]){
         arr[len-1]='\0';
         len--;
     }
-    int end=len-1,ma=0;
-    if(len==1){
-        printf("Yes");
-        return 0;
-    }if(len%2==0){
-        for(int i=0;i<len/2;i++){
-        if(arr[i]==arr[end]){
-            ma=1;
-        }else{
-            ma=0;
+    for(int i=0;i<(len)/2;i++){
+        if(arr[i]!=arr[len-i-1]){
+            return 0;
         }
-    }
-    }else{
-        for(int i=0;i<(len-1)/2;i++){
-        if(arr[i]==arr[end]){
-            end--;
-            ma=1;
-        }else{
-            ma=0;
-        }
-    }
-    }
-    if(ma==1){
-        printf("Yes");
-    }else{
-        printf("No");
-    }
+    }return 1;
 }
 int main() {
     char arr[1000];
     fgets(arr,sizeof(arr),stdin);
-    palindrome(arr);
+    if(palindrome(arr)){
+        printf("Yes");
+    }else{
+        printf("No");
+    }
     return 0;
 }
