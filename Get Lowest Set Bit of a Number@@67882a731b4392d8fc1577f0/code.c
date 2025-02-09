@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    int num1,position=1;
-    scanf("%d",&num1);
+    int num,position=1;
+    scanf("%d",&num);
     while((num&1)==0){
         num>>=1;
         position++;
