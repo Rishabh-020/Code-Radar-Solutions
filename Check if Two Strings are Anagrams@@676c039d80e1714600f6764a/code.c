@@ -12,6 +12,5 @@ int main() {
     if(str2[strlen(str2)-1]=='\n'){
         str2[strlen(str2)-1]='\0';
     }
-    printf("%s", welcome());
     return 0;
 }
