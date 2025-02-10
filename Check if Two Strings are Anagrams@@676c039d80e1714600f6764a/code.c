@@ -12,5 +12,13 @@ int main() {
     if(str2[strlen(str2)-1]=='\n'){
         str2[strlen(str2)-1]='\0';
     }
+    int len1=strlen(str1)-1,len2=strlen(str2)-1;
+    if(len1==len2){
+        for(int i=0;i<str1;i++){
+        
+        }
+    }else{
+        printf("No");
+    }
     return 0;
 }
