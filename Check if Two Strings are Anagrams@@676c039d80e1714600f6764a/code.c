@@ -4,7 +4,7 @@
 int main() {
     char str1[1000];
     char str2[1000];
-    fgets(str1,siezof(str1),stdin);
+    fgets(str1,sizeof(str1),stdin);
     if(str1[strlen(str1)-1]=='\n'){
         str1[strlen(str1)-1]='\0';
     }
