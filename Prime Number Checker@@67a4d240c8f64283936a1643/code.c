@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int prime(int num){
+void prime(int num){
     if(num<=1){
         printf("%d",0);
     }
