@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 void even_arr(int arr[],int num){
-    int even[num],scam=0,finaly=-1;
+    int even[num];
+    int scam=0,finaly=-1;
     for(int i=0;i<num;i++){
         if(arr[i]%2==0){
             even[scam]=arr[i];
