@@ -17,7 +17,7 @@ int prime(int num){
 int main() {
     int num1,num2;
     scanf("%d",&num1);
-    for(int i-1;i<=num1;i++){
+    for(int i=1;i<=num1;i++){
         scanf("%d",&num2);
         prime(num2);
     }
