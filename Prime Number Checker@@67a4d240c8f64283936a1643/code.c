@@ -19,7 +19,7 @@ int main() {
     scanf("%d",&num1);
     for(int i=1;i<=num1;i++){
         scanf("%d",&num2);
-        prime(num2);
+        printf("%d",prime(num2));
     }
     return 0;
 }
