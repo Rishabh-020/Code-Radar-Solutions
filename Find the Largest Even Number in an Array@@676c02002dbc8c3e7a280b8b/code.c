@@ -9,11 +9,18 @@ void even_arr(int arr[],int num){
             scam++;
         }
     }
-    for(int i=0;i<scam-1;i++){
-        if(even[i]<even[i+1]){
-            finaly=even[i+1];
+    if (scam == 0) {
+        printf("-1");
+        return;
+    }
+      for (int i = 0; i < scam - 1; i++) {
+        if (even[i] > even[i + 1]) {
+            finaly = even[i];
             break;
         }
+    }
+    if (finaly == -1) {
+        finaly = even[scam - 1];
     }
     printf("%d",finaly);
 }
