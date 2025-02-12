@@ -17,6 +17,9 @@ int main() {
     for(int i=0;i<num;i++){
         scanf("%d",&arr[i]);
     }
+    if(num==1){
+        printf("YES");
+    }
     if(rev_array(arr,num)){
         printf("YES");
     }else{
