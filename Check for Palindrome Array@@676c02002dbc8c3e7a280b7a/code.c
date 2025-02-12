@@ -19,6 +19,7 @@ int main() {
     }
     if(num==1){
         printf("YES");
+        return 0;
     }
     if(rev_array(arr,num)){
         printf("YES");
