@@ -1,12 +1,12 @@
 #include<stdio.h>
 int sum_digit(int num){
-    // int N=0;count=0;
-    // int number=num;
-    // while(number>0){
+    int N=0;count=0;
+    int number=num;
+    while(number>0){
     //     N=number%10;
     //     count+=N;
     //     number/=10;
-    // }
+    }
     // printf("%d",count);
 }
 int main(){
