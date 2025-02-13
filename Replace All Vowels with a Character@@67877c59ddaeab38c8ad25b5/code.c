@@ -8,13 +8,12 @@ int main(){
     }
     char replace;
     scanf("%c",&replace);
-     for(int i=0;arr[i]!='\0';i++){
-        if(arr[i]=='a'||arr[i]=='e'||arr[i]=='i'||arr[i]=='o'||arr[i]=='u'||
-           arr[i]=='A'||arr[i]=='E'||arr[i]=='I'||varr[i]=='O'||arr[i]=='U'||){
-            arr[i]=replace;
-            // printf("%c",replace);
-           }
-            printf("%c",arr[i]);
+      for (int i = 0; arr[i] != '\0'; i++) {
+        if (arr[i] == 'a' || arr[i] == 'e' || arr[i] == 'i' || arr[i] == 'o' || arr[i] == 'u' ||
+            arr[i] == 'A' || arr[i] == 'E' || arr[i] == 'I' || arr[i] == 'O' || arr[i] == 'U') {
+            arr[i] = replace;
+        }
+        printf("%c", arr[i]);
     }
     return 0;
 }
