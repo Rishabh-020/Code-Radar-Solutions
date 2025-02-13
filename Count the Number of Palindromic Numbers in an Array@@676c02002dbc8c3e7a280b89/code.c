@@ -22,7 +22,9 @@ int main(){
         scanf("%d",&arr[i]);
     }
     for(int i=0;i<num;i++){
-        count+=palindrome(arr[i]);
+        if(palindrome(arr[i])==1){
+            count++;
+        }
     }
     printf("%d",count);
     return 0;
