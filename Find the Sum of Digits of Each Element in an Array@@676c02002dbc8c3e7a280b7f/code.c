@@ -7,7 +7,7 @@ int sum_digit(int num){
         count+=N;
         number/=10;
     }
-    printf("%d",count);
+    printf("%d ",count);
 }
 int main(){
     int num;
