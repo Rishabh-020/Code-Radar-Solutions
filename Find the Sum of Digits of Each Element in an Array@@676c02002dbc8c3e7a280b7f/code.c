@@ -1,7 +1,8 @@
 #include<stdio.h>
+#include<stdlib.h>
 int sum_digit(int num){
     int N=0,count=0;
-    int number=num;
+    int number=abs(num);
     while(number>0){
         N=number%10;
         count+=N;
