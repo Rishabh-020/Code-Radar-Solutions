@@ -9,7 +9,7 @@ int palindrome(int num){
     }
     if(num==count){
         printf("%d\n",count);
-        printf("%d",1);
+        printf("%d\n",1);
     }else{
         printf("%d",0);
     }
