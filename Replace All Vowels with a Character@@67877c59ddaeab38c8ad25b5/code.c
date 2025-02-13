@@ -8,7 +8,7 @@ int main(){
     }
     char replace;
     scanf("%c",&replace);
-    for(int i=0;i<strlen(arr)-1;i++){
+    for(int i=0;arr[i]!='\n';i++){
         if(arr[i]=='a'||arr[i]=='e'||arr[i]=='i'||arr[i]=='o'||arr[i]=='u'||
            arr[i]=='A'||arr[i]=='E'||arr[i]=='I'||varr[i]=='O'||arr[i]=='U'||){
             arr[i]=replace;
