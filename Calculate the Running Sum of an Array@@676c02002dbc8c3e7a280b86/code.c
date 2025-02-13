@@ -6,10 +6,8 @@ int main(){
     for(int i=0;i<num;i++){
         scanf("%d ",&arr[i]);
     }
-    for(int i=0;i<num;i++){
-        if(i==0){
-            printf("%d",arr[0]);
-        }
+    printf("%d ",arr[0]);
+    for(int i=1;i<num;i++){
         printf("%d ",arr[i]+i-1);
     }
     return 0;
