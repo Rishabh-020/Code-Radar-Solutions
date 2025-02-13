@@ -1,5 +1,5 @@
 #include<stdio.h>
-void sum_digit(int num){
+int sum_digit(int num){
     int N=0,count=0;
     int number=num;
     while(number>0){
