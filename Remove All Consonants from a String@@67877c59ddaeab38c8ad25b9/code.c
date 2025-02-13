@@ -13,9 +13,6 @@ int main(){
         arr[i]=='A'||arr[i]=='E'||arr[i]=='I'||arr[i]=='O'||arr[i]=='U'||arr[i]==' '){
             printf("%c",arr[i]);
         }
-        if(arr[i]>0&&arr[i]<1000){
-            printf("%d",arr[i]);
-        }
     }
     return 0;
 }
