@@ -1,6 +1,5 @@
 #include<stdio.h>
 #include<string.h>
-#include<ctype.h>
 int main(){
     char arr[100];
     fgets(arr,sizeof(arr),stdin);
@@ -13,9 +12,6 @@ int main(){
         if(arr[i]=='a'||arr[i]=='e'||arr[i]=='i'||arr[i]=='o'||arr[i]=='u'||
         arr[i]=='A'||arr[i]=='E'||arr[i]=='I'||arr[i]=='O'||arr[i]=='U'||arr[i]==' '){
             printf("%c",arr[i]);
-        }
-        if(isdigit(arr[i])){
-            printf("%d",arr[i]);
         }
     }
     return 0;
