@@ -5,7 +5,7 @@ int main() {
     char arr[1000];
     int len=0;
     fgets(arr,1000,stdin);
-    if(fgets(arr, 1000, stdin) == NULL || arr[0]=='\n'){
+    if(arr[0]=='\n'|| arr[0]=='\n'){
         printf("%d","0");
         return 0;
     }
