@@ -8,10 +8,9 @@ int palindrome(int num){
         number/=10;
     }
     if(num==count){
-        printf("%d\n",count);
-        printf("%d\n",1);
+        return 1;
     }else{
-        printf("%d",0);
+        return 0;
     }
 }
 int main(){
