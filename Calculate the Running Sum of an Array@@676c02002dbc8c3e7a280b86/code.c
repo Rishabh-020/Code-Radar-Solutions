@@ -7,9 +7,9 @@ int main(){
         scanf("%d ",&arr[i]);
     }
     for(int i=0;i<num;i++){
-        if(i=0){
-            printf("%d",arr[i]);
-        }
+        // if(i=0){
+        //     printf("%d",arr[i]);
+        // }
         printf("%d ",arr[i]+i-1);
     }
     return 0;
