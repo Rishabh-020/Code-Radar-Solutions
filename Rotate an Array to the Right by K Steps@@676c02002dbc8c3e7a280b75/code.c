@@ -7,10 +7,6 @@ int main() {
         scanf("%d",&arr[i]);
     }
     scanf("%d",&num2);
-    num2=num2%num;
-    if(num2<0){
-        num2=(num+num2)%num;
-    }
     for(int i=num2;i<num;i++){
         printf("%d ",arr[i]);
     }
