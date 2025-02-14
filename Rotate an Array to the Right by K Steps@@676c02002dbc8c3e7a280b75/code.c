@@ -8,7 +8,7 @@ int main() {
     }
     scanf("%d",&num2);
     if(num2>num){
-        num2=num2-num1;
+        num2=num2-num;
     }
     for(int i=num-num2;i<num;i++){
         printf("%d ",arr[i]);
