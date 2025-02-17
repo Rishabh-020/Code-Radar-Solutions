@@ -2,9 +2,9 @@
 int main() {
     int n,binary[32],index=0;
     scanf("%d",&n);
-    if(n==0){
-        printf("%d",0);
-    }
+    // if(n==0){
+    //     printf("%d",0);
+    // }
     while(n>0){
         binary[index]=n%2;
         n=n/2;
