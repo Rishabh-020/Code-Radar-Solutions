@@ -11,7 +11,7 @@ int main() {
         index++;
     }
     for(int i=index-1;i>=0;i--){
-        printf("%d",binary[i]);
+        printf("%d",binary[index]);
     }    
     return 0;
 }
