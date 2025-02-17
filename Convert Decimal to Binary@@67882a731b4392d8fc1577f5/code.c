@@ -3,7 +3,7 @@ int main() {
     int n,binary[32],index=0;
     scanf("%d",&n);
      if(n==0){
-        printf("%d",0);
+        printf(0);
     }
     while(n>0){
         binary[index]=n%2;
