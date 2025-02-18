@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
-    int num,ma=0;
+    int num,ma=1;
     scanf("%d",&num);
     if(num<=1){
         ma=0;
@@ -8,8 +8,8 @@ int main(){
     for(int i=2;i*i<=num;i++){
         if(num%i==0){
             ma=0;
+            break;
         }
-        ma=1;
     }
     if(ma==1){
         printf("Prime");
