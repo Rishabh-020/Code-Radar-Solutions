@@ -2,7 +2,7 @@
 int main(){
     int num,ma=0;
     scanf("%d",&num);
-    while(num<=1){
+    if(num<=1){
         ma=0;
     }
     for(int i=2;i*i<=num;i++){
