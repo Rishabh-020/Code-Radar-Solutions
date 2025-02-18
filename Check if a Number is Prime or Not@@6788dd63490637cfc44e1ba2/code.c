@@ -6,7 +6,7 @@ int main(){
         if(num%i==0){
             ma=0;
         }
-        ma=1
+        ma=1;
     }
     if(ma==1){
         printf("Prime");
