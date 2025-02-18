@@ -10,6 +10,6 @@ int main() {
     //     count++;
     // }
     // printf("%d",count);
-    printf("%d",-num+31);
+    printf("%d",-num+32);
     return 0;
 }
