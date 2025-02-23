@@ -5,7 +5,7 @@ void absolute_diff(int arr[],int num){
             if(arr[i]-arr[j]==1){
                 printf("%d %d",arr[i],arr[j]);
             }else if(arr[j]-arr[i]==1){
-                printf("%d %d",arr[j+1],arr[j]);
+                printf("%d %d",arr[j],arr[i]);
             }
         }
     }
