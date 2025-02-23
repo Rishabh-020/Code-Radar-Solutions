@@ -2,7 +2,7 @@
 int absolute_diff(int arr[],int num){
     for(int i=0;i<num-1;i++){
         for(int j=0;j<num-i-1;j++){
-            if(arr[i]-arr[j]>=1){
+            if(arr[i]-arr[j]<=1){
                 printf("%d %d\n",arr[i],arr[j]);
             }
             break;
