@@ -1,7 +1,7 @@
 #include<stdio.h>
 int absolute_diff(int arr[],int num){
     for(int i=0;i<num-1;i++){
-        for(int j=0;j<num-i;j++){
+        for(int j=0;j<num-i-1;j++){
             if(arr[i]-arr[j]==1){
                 printf("%d %d",arr[i],arr[j]);
             }else if(arr[j]-arr[i]==1){
