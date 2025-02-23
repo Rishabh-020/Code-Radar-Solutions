@@ -11,8 +11,9 @@ int main(){
             arr[i]=arr[i+1];
         }
     }
-    for(int i=0;i<num;i++){
+    for(int i=0;i<num-1;i++){
         printf("%d ",arr[i]);
     }
+    printf("%d",arr[num-1]);
     return 0;
 }
