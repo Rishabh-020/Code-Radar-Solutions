@@ -5,7 +5,8 @@ int find_sum(int arr[],int num,int target){
             if(arr[i]+arr[j]==target && arr[i]+arr[j+1]==target){
                 printf("%d %d\n",arr[i],arr[j]);
                 return 0;
-            }else if(arr[i]+arr[j]==target){
+            }
+            if(arr[i]+arr[j]==target){
                 printf("%d %d\n",arr[i],arr[j]);
             }
         }
