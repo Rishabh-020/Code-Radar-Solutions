@@ -5,10 +5,10 @@ int absolute_diff(int arr[],int num){
             if(arr[i]-arr[j]>=1){
                 printf("%d %d\n",arr[i],arr[j]);
             }
+            break;
             // else if(arr[j]-arr[i]==1 && arr[j]-arr[i]>0){
             //     printf("%d %d\n",arr[j],arr[i]);
             // }
-            break;
         }
     }
    return 0;
