@@ -2,9 +2,11 @@
 int find_sum(int arr[],int num,int target){
     for(int i=0;i<num-1;i++){
         for(int j=i+1;j<num;j++){
-            if(arr[i]+arr[j]==target){
+            if(arr[i]+arr[j]==target && arr[i]+arr[j+1]==target){
                 printf("%d %d\n",arr[i],arr[j]);
                 return 0;
+            }else if(arr[i]+arr[j]==target){
+                printf("%d %d\n",arr[i],arr[j]);
             }
         }
     }
