@@ -7,7 +7,7 @@ int main(){
         if(N==1 || N==0){
             len++;
         }else{
-            count=0
+            count=0;
         }
     }
     if(count==0){
