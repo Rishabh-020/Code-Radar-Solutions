@@ -22,13 +22,13 @@ int main(){
     // }else{
     //     printf("Yes");
     // }
-    char arr[1000];
+    char str[1000];
     int count=0;
-    fgets(arr,1000,stdin);
-    if(arr[strlen(arr)-1]=='\n'){
-        arr[strlen(arr)-1]='\0';
+    fgets(str,1000,stdin);
+    if(str[strlen(str)-1]=='\n'){
+        str[strlen(str)-1]='\0';
     }
-    for(int i=0;i<strlen(arr)-1;i++){
+    for(int i=0;i<strlen(str)-1;i++){
         if(isdigit(str[i])){
             if(str[i]==1 || str[i]==0){
                 count=0;
