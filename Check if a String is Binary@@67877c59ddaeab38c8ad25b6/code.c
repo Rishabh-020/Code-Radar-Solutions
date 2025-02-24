@@ -33,9 +33,6 @@ int main(){
             if(str[i]==1 || str[i]==0){
                 count=0;
             }
-            else{
-                count=1;
-            }
         }else{
             count=1;
         }
