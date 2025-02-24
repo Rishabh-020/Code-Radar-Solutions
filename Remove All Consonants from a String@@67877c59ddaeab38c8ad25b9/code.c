@@ -11,7 +11,7 @@ int main(){
     }
     for(int i=0;i<len;i++){
         if(isdigit(str[i])){
-            printf("%d",str[i]);
+            printf("%d",arr[i]);
         }
         if(arr[i]=='a'||arr[i]=='e'||arr[i]=='i'||arr[i]=='o'||arr[i]=='u'||
         arr[i]=='A'||arr[i]=='E'||arr[i]=='I'||arr[i]=='O'||arr[i]=='U'||arr[i]==' '){
