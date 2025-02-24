@@ -3,6 +3,10 @@
 int main(){
     int num,count=1,N=0,len=0;
     scanf("%d",&num);
+    if(num==' '){
+        printf("Yes");
+        return 0;
+    }
     while(num>0){
         N=num%10;
         if(isalpha(N)){
