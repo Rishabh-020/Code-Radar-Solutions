@@ -10,7 +10,7 @@ int main(){
         len--;
     }
     for(int i=0;i<len;i++){
-        if(arr[i]=='a'||arr[i]=='e'||arr[i]=='i'||arr[i]=='o'||arr[i]=='u'||
+        if(isdigit(arr[i])||arr[i]=='a'||arr[i]=='e'||arr[i]=='i'||arr[i]=='o'||arr[i]=='u'||
         arr[i]=='A'||arr[i]=='E'||arr[i]=='I'||arr[i]=='O'||arr[i]=='U'||arr[i]==' '){
             printf("%c",arr[i]);
         }
