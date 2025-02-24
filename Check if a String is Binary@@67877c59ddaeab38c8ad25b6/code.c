@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<string.h>
 #include<ctype.h>
 int main(){
     // int num,count=1,N=0,len=0;
