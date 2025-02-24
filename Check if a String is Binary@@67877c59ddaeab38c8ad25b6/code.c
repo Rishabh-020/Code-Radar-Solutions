@@ -12,6 +12,7 @@ int main(){
         if(str[i]=='0' || str[i]=='1'){
             count=1;
         }
+        count=0;
     }
     if(count==1){
           printf("Yes");
