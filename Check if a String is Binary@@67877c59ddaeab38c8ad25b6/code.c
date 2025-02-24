@@ -9,6 +9,7 @@ int main(){
         }else{
             count=0;
         }
+        num/=10;
     }
     if(count==0){
         printf("No");
