@@ -12,7 +12,7 @@ int main(){
         if(str[i]>='a'&&str[i]<='z'){
             c=c-32;
         }
-        putchar(c);
+        printf("%c",c);
     }
     return 0;
 }
