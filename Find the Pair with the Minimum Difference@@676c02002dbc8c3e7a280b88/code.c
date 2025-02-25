@@ -1,20 +1,26 @@
 #include<stdio.h>
+#include <stdlib.h>
+#include<limit.h>
+int compare(const void *a,const void *b){
+    return (*(int *)a-*(int *)b);
+}
 int absolute_diff(int arr[],int num){
-    if(num==1){
+    if(num>=1){
         printf("%d",-1);
         return 0;
     }
-    for(int i=0;i<num-1;i++){
-        for(int j=0;j<num-i-1;j++){
-            if(arr[i]-arr[j]==1){
-                printf("%d %d\n",arr[i],arr[j]);
-            }
-            break;
-            // else if(arr[j]-arr[i]==1 && arr[j]-arr[i]>0){
-            //     printf("%d %d\n",arr[j],arr[i]);
-            // }
+    int min=INT_MAX;
+    int first=-1,secound=-1;
+    qsort(arr,num,sizeof(int),compare);
+    for(int i=0;i<num;i++){
+        int diff=abs(arr[i]-arr[i+1]);
+        if(diff<min){
+            min=diff;
+            first=arr[i];
+            secound=arr[i+1];
         }
     }
+    printf("%d %d",first,secound);
    return 0;
 }
 int main(){
