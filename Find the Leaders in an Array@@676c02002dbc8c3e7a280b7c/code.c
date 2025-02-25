@@ -9,8 +9,8 @@ int main(){
         printf("%d",arr[0]);
         return 0;
     }
-    for(int i=0;i<num-1;i++){
-        for(int j=1;j<num-1-i;j++){
+    for(int i=1;i<num-1;i++){
+        for(int j=2;j<num-1-i;j++){
             if(arr[i]>arr[j]){
                 now=1;
             }else{
@@ -18,7 +18,7 @@ int main(){
             }
         }
         if(now==1){
-            printf("%d",arr[i]);
+            printf("%d ",arr[i]);
         }
         // if(arr[i]>=arr[i+1]){
         //     printf("%d ",arr[i]);
