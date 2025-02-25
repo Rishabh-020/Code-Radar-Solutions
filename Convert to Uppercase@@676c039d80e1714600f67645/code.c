@@ -8,7 +8,7 @@ int main(){
         str[strlen(str)-1]='\0';
     }
     for(int i=0;str[i]!='\0';i++){
-        int c=str[i]
+        int c=str[i];
         if(str[i]>='a'&&str[i]<='z'){
             c=c-32;
         }
