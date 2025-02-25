@@ -8,7 +8,10 @@ int main(){
         str[strlen(str)-1]='\0';
     }
     for(int i=0;str[i]!='\0';i++){
-        printf("%c",toupper(str[i]));
+        if(str[i]>'a'&&str[i]<'z'){
+            str[i]=str[i]-32;
+            printf("%c",str[i]);
+        }
     }
     return 0;
 }
