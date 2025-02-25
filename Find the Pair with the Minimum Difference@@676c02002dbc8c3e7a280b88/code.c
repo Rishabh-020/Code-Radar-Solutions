@@ -5,7 +5,7 @@ int compare(const void *a,const void *b){
     return (*(int *)a-*(int *)b);
 }
 int absolute_diff(int arr[],int num){
-    if(num>=1){
+    if(num<=1){
         printf("%d",-1);
         return 0;
     }
