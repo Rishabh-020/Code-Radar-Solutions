@@ -12,8 +12,7 @@ int main(){
         for(int j=i+1;j<len;j++){
             if(tolower(str[i])!=tolower(str[j])){
                 printf("%c",str[i]);
-                return 0;
-            }
+            }return 0;
         }
     }
     return 0;
