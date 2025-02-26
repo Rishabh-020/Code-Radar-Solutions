@@ -13,7 +13,7 @@ int main(){
             if(tolower(str[i])!=tolower(str[j])){
                 printf("%c",str[i]);
                 break;
-            }
+            }break;
         }
     }
     return 0;
