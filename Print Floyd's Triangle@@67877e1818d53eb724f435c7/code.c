@@ -5,10 +5,9 @@ int main() {
     scanf("%d",&num);
     for(int i=1;i<=num;i++){
         for(int j=1;j<=i;j++){
-            printf("%d ",k);
+            printf("%d",k);
             k++;
-        }
-        printf("\n");
+        }printf("\n");
     }
     return 0;
 }
