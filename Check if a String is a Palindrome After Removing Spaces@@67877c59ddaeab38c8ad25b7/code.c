@@ -2,7 +2,7 @@
 #include<string.h>
 #include<ctype.h>
 int main(){
-    char str1[1000].str2[1000];
+    char str1[1000],str2[1000];
     fgets(str1,1000,stdin);
     int len=strlen(str1)-1,j=0,pal=0;
     if(str1[len]=='\n'){
