@@ -10,7 +10,7 @@ int main(){
     }
     for(int i=0;str1[i]!='\0';i++){
         if(str1[i]!=' '){
-            str2[j]=str[i];
+            str2[j]=str1[i];
             j++;
         }
     }
