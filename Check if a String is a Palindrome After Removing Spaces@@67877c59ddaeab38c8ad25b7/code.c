@@ -16,7 +16,7 @@ int main(){
     }
     str2[j]='\0';
     for(int i=0;i<j/2;i++){
-        if(str2[i]!=str1[j-i]-1){
+        if(str2[i]!=str1[j-i-1]){
             pal=0;
             break;
         }
