@@ -4,9 +4,9 @@
 int main(){
     char str[1000];
     fgets(str,1000,stdin);
-    int len=strlen(str)-1;
-    if(str[len]=='\n'){
-        str[len]='\0';
+    int len=strlen(str);
+    if(str[len-1]=='\n'){
+        str[len-1]='\0';
     }
     for(int i=0;i<len;i++){
         if(str[i]==' ')continue;
