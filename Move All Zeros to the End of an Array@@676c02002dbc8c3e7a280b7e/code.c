@@ -8,7 +8,7 @@ int main(){
     }
     for(int i=0;i<num;i++){
         if(arr[i]==0){
-            arr[i]=arr[num-1];
+            arr[num-1]=arr[i];
         }
         printf("%d ",arr[i]);
     }
