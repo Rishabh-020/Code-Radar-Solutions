@@ -10,7 +10,7 @@ int main(){
     }
     for(int i=0;i<len;i++){
         for(int j=1;j<len-i;j++){
-            if(str[i]==str[j]){
+            if(tolower(str[i])==tolower(str[j])){
                 printf("No");
                 return 0;
             }
