@@ -9,10 +9,12 @@ int main(){
         str[len]='\0';
     }
     for(int i=0;i<len;i++){
-        for(int j=1;j<len-i;j++){
-            if(tolower(str[i])==tolower(str[j])){
+        for(int j=i+1;j<len;j++){
+            if(str[j]!=' '){
+                if(tolower(str[i])==tolower(str[j])){
                 printf("No");
                 return 0;
+            }
             }
         }
     }
