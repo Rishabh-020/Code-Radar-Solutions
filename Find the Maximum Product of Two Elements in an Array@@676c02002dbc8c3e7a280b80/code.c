@@ -11,7 +11,7 @@ int main(){
         mn1=arr[1];
         mn2=arr[0];
     }
-    for(int i=0;i<num;i++){
+    for(int i=2;i<num;i++){
         if(arr[i]>mn1){
             mn2=mn1;
             mn1=arr[i];
