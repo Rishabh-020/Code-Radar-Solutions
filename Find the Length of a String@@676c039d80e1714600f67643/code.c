@@ -2,13 +2,13 @@
 #include<string.h>
 
 int main() {
-    char arr[1000];
+    char str[1000];
     int len=0;
-    fgets(arr,1000,stdin);
+    fgets(str,1000,stdin);
     if(str[strlen(str)-1]=='\n'){
         str[strlen(str)-1]='\0';
     }
-    if(arr[0]=='\n'){
+    if(str[0]=='\n'){
         printf("%d",0);
         return 0;
     }
