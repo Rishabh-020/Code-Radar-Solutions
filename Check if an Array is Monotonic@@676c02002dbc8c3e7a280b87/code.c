@@ -31,6 +31,9 @@ int main(){
     int num;
     scanf("%d",&num);
     int arr[num];
+    for(int i=0;i<=num;i++){
+        scanf("%d",&arr[i]);
+    }
     if(is_inc(arr,num)||is_dec(arr,num)){
         printf("YES");
     }else{
