@@ -1,5 +1,5 @@
 #include<stdio.h>
-void is_inc(int arr[],int num){
+int is_inc(int arr[],int num){
     int now=1;
     for(int i=0;i<num;i++){
         for(int j=i+1;j<num;j++){
@@ -12,7 +12,7 @@ void is_inc(int arr[],int num){
     }
     return 1;
 }
-void is_dec(int arr[],int num){
+int is_dec(int arr[],int num){
     int now=1;
     for(int i=0;i<num;i++){
         for(int j=i+1;j<num;j++){
