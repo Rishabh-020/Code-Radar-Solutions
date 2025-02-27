@@ -9,7 +9,7 @@ int main(){
         printf("%d",arr[0]);
         return 0;
     }
-    for(int i=0;i<num-1;i++){
+    for(int i=0;i<num;i++){
         for(int j=i+1;j<num;j++){
             if(arr[i]>=arr[j]){
                 now=1;
@@ -20,9 +20,6 @@ int main(){
         if(now==1){
             printf("%d ",arr[i]);
         }
-        // if(arr[i]>=arr[i+1]){
-        //     printf("%d ",arr[i]);
-        // }
     }printf("%d",arr[num-1]);
     return 0;
 }
