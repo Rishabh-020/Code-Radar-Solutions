@@ -8,7 +8,7 @@ int main(){
         str[len-1]='\0';
     }
     for(int i=0;i<len-1;i++){
-        if(str[i]==' '){count++;}
+        if(str[i]==' '&& str[0]!=' '){count++;}
     }printf("%d",count);
     return 0;
 }
