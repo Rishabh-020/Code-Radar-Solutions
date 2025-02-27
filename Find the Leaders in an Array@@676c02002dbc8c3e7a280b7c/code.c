@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
-    int num,now=0;
+    int num,now=1;
     scanf("%d",&num);
     int arr[num];
     for(int i=0;i<num;i++)
@@ -13,6 +13,8 @@ int main(){
         for(int j=i+1;j<num;j++){
             if(arr[i]>=arr[j]){
                 now=1;
+            }else if(arr[i]<arr[j]){
+                now=0;
             }
         }
         if(now==1){
