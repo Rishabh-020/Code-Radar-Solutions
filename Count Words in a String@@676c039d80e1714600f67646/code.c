@@ -7,6 +7,10 @@ int main(){
     if(str[len-1]=='\n'){
         str[len-1]='\0';
     }
+    if(str[0]=' '){
+        printf("%d",0);
+        return 0;
+    }
     for(int i=0;i<len-1;i++){
         if(str[i]==' '){count++;}
     }printf("%d",count);
