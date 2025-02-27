@@ -20,6 +20,6 @@ int main() {
             mostFrequent = arr[i];
         }
     }
-    printf("The most frequent element is: %d\n", mostFrequent);
+    printf("%d", mostFrequent);
     return 0;
 }
