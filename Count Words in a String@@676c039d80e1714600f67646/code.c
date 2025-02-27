@@ -13,7 +13,7 @@ int main(){
     for(int i=0;i<len-1;i++){
         if(str[i]==' '||str[i]=='\0'){
             inword=0;
-        }else if(inword=0){
+        }else if(inword==0){
             inword=1;
             count++;
         }
