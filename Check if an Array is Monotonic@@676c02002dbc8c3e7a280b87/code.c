@@ -32,9 +32,9 @@ int main(){
     scanf("%d",&num);
     int arr[num];
     if(is_inc(arr,num)||is_dec(arr,num)){
-        printf("No");
+        printf("NO");
     }else{
-        printf("Yes");
+        printf("YES");
     }
     return 0;
 }
