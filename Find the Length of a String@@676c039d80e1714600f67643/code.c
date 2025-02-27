@@ -3,7 +3,10 @@
 int main() {
     char str[1000];
     int len=0;
-    fgets(str,1000,stdin);
+    if (fgets(str, 1000, stdin) == NULL || str[0] == '\n') {
+        printf("0");
+        return 0;
+    }
     for(int i=0;str[i]!='\0';i++){
         if(str[i]=='\n')str[i]='\0';
         len++;
