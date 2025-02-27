@@ -9,7 +9,7 @@ int main() {
         printf("%d",0);
         return 0;
     }
-    while(arr[len]!='\0' && arr[len]!='\n'){
+    while(arr[len]!='\0' || arr[len]!='\n'){
         len++;
     }
     printf("%d",len);
