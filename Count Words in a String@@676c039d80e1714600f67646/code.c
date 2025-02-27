@@ -10,7 +10,7 @@ int main(){
     if(str[len-1]=='\n'){
         str[len-1]='\0';
     }
-    for(int i=0;i<len-1;i++){
+    for(int i=0;str[i]!='\0';i++){
         if(str[i]==' '||str[i]=='\0'){
             inword=0;
         }else if(inword==0){
