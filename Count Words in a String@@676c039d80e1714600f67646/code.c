@@ -8,7 +8,11 @@ int main(){
         str[len-1]='\0';
     }
     for(int i=0;i<len-1;i++){
-        if(str[i]==' '&& str[0]!=' '){count++;}
+        if(str[0]==' '){
+            printf("%d",0);
+            return 0;
+        }
+        if(str[i]==' '){count++;}
     }printf("%d",count);
     return 0;
 }
