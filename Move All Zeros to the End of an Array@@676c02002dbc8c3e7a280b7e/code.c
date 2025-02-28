@@ -15,6 +15,8 @@ int main(){
     for(int i=0;i<num;i++){
         if(arr[i]==0){
             swap(arr[i],arr[i+1]);
+        }else{
+            printf("%d",arr[i]);
         }
     }
     return 0;
