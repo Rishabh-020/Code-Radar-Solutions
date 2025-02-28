@@ -1,26 +1,21 @@
 #include<stdio.h>
-int swap(int a,int b){
-    a=a^b;
-    b=a^b;
-    a=a^b;
-    printf("%d ",a);
-}
 int main(){
-    int num;
+    int num,newindex=0;
     scanf("%d",&num);
-    int arr[num];
+    int arr[num],new_arr[];
     for(int i=0;i<num;i++){
         scanf("%d",&arr[i]);
     }
-    for(int i=0;i<num-1;i++){
-        if(arr[i]==0){
-            arr[i]=arr[i]^arr[i+1];
-            arr[i+1]=arr[i]^arr[i+1];
-            arr[i]=arr[i]^arr[i+1];
-            printf("%d ",arr[i]);
-        }else{
-            printf("%d ",arr[i]);
+    for(int i=0;i<num;i++){
+        if(arr[i]!=0){
+            new_arr[newindex++]=arr[i];
         }
+    }
+    while(newindex>num){
+        new_arr[newindex++]=0;
+    }
+    for(int i=0;i<num;i++){
+        printf("%d",new_arr[i]);
     }
     return 0;
 }
