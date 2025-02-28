@@ -12,6 +12,6 @@ int main(){
     //         min1=arr[i+1];
     //     }
     // }
-    printf("%d",m1);
+    printf("%d",now);
     return 0;
 }
