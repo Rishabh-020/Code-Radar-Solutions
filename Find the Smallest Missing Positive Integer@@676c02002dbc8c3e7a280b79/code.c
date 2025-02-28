@@ -15,7 +15,7 @@ int main(){
     }
     for(int i=min;i<=max;i++){
         if(hash[i]==0){
-            printf("%d",hash[i]);
+            printf("%d",i);
             return 0;
         }
     }
