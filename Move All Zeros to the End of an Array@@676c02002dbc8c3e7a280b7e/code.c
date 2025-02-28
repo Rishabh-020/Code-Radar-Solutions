@@ -16,7 +16,7 @@ int main(){
         if(arr[i]==0){
             swap(arr[i],arr[i+1]);
         }else{
-            printf("%d",arr[i]);
+            printf("%d ",arr[i]);
         }
     }
     return 0;
