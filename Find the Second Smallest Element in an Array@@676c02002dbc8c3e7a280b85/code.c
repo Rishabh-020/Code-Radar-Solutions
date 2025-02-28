@@ -18,7 +18,7 @@ int main(){
     }if(min2==INT_MAX){
         printf("-1");
     }else{
-        printf("%d",min1);
+        printf("%d",min2);
     }
     return 0;
 }
