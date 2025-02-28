@@ -6,7 +6,7 @@ int main(){
     for(int i=0;i<num;i++){
         scanf("%d",&arr[i]);
     }
-    for(int i=0;i<num-1;i++){
+    for(int i=0;i<num;i++){
         if(arr[i]==0){
             int temp=arr[i];
             arr[i]=arr[i+1];
