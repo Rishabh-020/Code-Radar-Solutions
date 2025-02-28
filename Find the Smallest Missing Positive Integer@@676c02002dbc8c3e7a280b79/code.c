@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<limit.h>
+#include<limits.h>
 int main(){
     int num;
     scanf("%d",&num);
