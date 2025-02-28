@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<limits.h>
 int main(){
-    int num;
+    int num,num1=0;
     scanf("%d",&num);
     int arr[num];
     for(int i=0;i<num;i++){
@@ -16,10 +16,13 @@ int main(){
             min=arr[i];
         }
     }
-    for(int i=min;i<=max;i++){
-        if(i not in arr){
-            printf("%d",i);
+    for(int j=0;j<num;j++){
+        for(int i=min;i<=max;i++){
+            if(arr[j]!=i){
+                num1=i;
+            }
         }
     }
+    printf("%d",i);
     return 0;
 }
