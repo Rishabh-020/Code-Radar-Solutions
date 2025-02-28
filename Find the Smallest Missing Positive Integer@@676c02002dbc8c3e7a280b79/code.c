@@ -23,6 +23,6 @@ int main(){
             }
         }
     }
-    printf("%d",i);
+    printf("%d",num1);
     return 0;
 }
