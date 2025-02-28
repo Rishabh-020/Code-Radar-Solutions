@@ -15,9 +15,10 @@ int main(){
     }
     for(int i=min;i<=max;i++){
         if(hash[i]==0){
-            num1=hash[i];
+            printf("%d",hash[i]);
+            return 0;
         }
     }
-    printf("%d",num1);
+    printf("%d",max+1);
     return 0;
 }
