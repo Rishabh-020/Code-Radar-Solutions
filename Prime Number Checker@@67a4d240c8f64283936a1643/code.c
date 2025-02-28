@@ -14,5 +14,5 @@ int isPrime(int num){
         }
     }
     if(count==2)return 1;
-    else return0;
+    else return 0;
 }
