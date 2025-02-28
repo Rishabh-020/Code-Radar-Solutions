@@ -8,10 +8,11 @@ int main(){
     }
     for(int i=0;i<num;i++){
         if(arr[i]==0){
-            arr[num-1]=arr[i];
+            int temp=arr[i];
             arr[i]=arr[i+1];
+            arr[i+1]=temp;
         }
-        printf("%d ",arr[i]);
+        printf("%d",arr[i]);
     }
     return 0;
 }
