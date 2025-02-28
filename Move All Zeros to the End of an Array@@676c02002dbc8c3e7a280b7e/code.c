@@ -6,13 +6,13 @@ int main(){
     for(int i=0;i<num;i++){
         scanf("%d",&arr[i]);
     }
-    for(int i=0;i<num;i++){
-        if(arr[i]==0){
-            int temp=arr[i];
-            arr[i]=arr[i+1];
-            arr[i+1]=temp;
+    for(int i=1;i<num;i++){
+        if(arr[i-1]==0){
+            int temp=arr[i-1];
+            arr[i-1]=arr[i];
+            arr[i]=temp;
         }
-        printf("%d ",arr[i]);
+        printf("%d ",arr[i-1]);
     }
     return 0;
 }
