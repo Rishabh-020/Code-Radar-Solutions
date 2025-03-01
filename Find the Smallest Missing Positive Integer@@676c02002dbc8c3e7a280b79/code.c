@@ -3,7 +3,7 @@
 int main(){
     int num,num1=0;
     scanf("%d",&num);
-    int arr[num],hash[1000]={0};
+    int arr[num];
     for(int i=0;i<num;i++){
         scanf("%d",&arr[i]);
     }
