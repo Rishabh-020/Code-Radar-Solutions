@@ -11,7 +11,7 @@ int main(){
             new_arr[newindex++]=arr[i];
         }
     }
-    while(newindex>num){
+    while(newindex<num){
         new_arr[newindex++]=0;
     }
     for(int i=0;i<num;i++){
