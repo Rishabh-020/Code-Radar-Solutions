@@ -1,16 +1,16 @@
 #include<stdio.h>
 int main(){
-    int num;
+    int num,max=0;
     scanf("%d",&num);
     int arr[num];
     for(int i=0;i<num;i++){
         scanf("%d",&arr[i]);
     }
     for(int i=0;i<num;i++){
-        for(int j=i+1;j<num;j++){
-            if(arr[j]>arr[j+1]){
+        for(int j=i+1;j<num-1;j++){
+            if(arr[j]>arr[j+1] && arr[j]>max){
                 arr[i]=arr[j];
-            }else{
+            }else if(arr[j]<arr[j+1] && arr[j+1]>max){
                 arr[i]=arr[j+1];
             }
         }
