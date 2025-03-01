@@ -29,7 +29,7 @@ int main(){
         int temp=arr[i];
         arr[i]=max;
         if(temp>max){
-            temp=max;
+            max=temp;
         }
     }
     for(int i=0;i<num;i++){
