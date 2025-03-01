@@ -21,7 +21,9 @@ int main(){
     for(int i=0;i<num-2;i++){
         printf("%d ",arr[i]);
     }
-    printf("%d ",arr[num-1]);
+    if(num>1){
+        printf("%d ",arr[num-1]);
+    }
     printf("%d",-1);
     return 0;
 }
