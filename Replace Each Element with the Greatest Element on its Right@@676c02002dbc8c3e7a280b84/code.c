@@ -25,7 +25,7 @@ int main(){
     //     printf("%d ",arr[num-1]);
     // }
     // printf("%d",-1);
-    for(int i=num-1;i<=0;i++){
+    for(int i=num-1;i>=0;i--){
         int temp=arr[i];
         arr[i]=max;
         if(temp>max){
