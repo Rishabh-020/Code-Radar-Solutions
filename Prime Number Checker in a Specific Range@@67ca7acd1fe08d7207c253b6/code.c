@@ -6,7 +6,7 @@ int is_prime(int n){
     for(int i=2;i<=n/2;i++){
         if(n%i==0)return 0;
     }
-    return n;
+    return 1;
 }
 int printPrimesInRange(int a,int b){
     for(int i=a;i<=b;i++){
