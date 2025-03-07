@@ -16,7 +16,7 @@ int printPrimesInRange(int a,int b){
             found=1;
         }
     }
-    if(!found){
+    if(found==0){
         printf("No prime numbers");
     }
 }
