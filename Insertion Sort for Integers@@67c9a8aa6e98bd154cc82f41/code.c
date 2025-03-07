@@ -6,7 +6,7 @@ int compare(const void *a,const void *b){
 int insertionSort(int *arr,int n){
     qsort(arr,n,sizeof(int),compare);
 }
-int printArray(int arr,int n){
+int printArray(int *arr,int n){
     insertionSort(arr,n);
     for(int i=0;i<n;i++)printf("%d",arr[i]);
 }
