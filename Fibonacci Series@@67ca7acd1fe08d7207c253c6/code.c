@@ -5,7 +5,7 @@ int fib(int n){
     }else return fib(n-1)+fib(n-2);
 }
 int fibonacciSeries(int n){
-    for(int i=0;i<=n;i++){
+    for(int i=0;i<n;i++){
         printf("%d ",fib(i));
     }
 }
