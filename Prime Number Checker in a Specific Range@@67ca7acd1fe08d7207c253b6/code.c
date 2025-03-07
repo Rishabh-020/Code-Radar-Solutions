@@ -7,9 +7,9 @@ int is_prime(int n){
         if(n%i==0)return 0;
     }
     if(n>=0){
-        return n;
+        printf("%d ",n);
     }else{
-        return "No prime numbers";
+        printf("No prime numbers");
     }
 }
 int printPrimesInRange(int a,int b){
@@ -18,7 +18,7 @@ int printPrimesInRange(int a,int b){
         //     printf("No prime numbers");
         // }
         if(is_prime(i)!=0){
-            printf("%d ",is_prime(i));
+            is_prime(i);
         }
     }
 }
