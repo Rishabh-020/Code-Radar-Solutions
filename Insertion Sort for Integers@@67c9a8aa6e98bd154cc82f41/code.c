@@ -3,7 +3,7 @@
 int compare(const void *a,const void *b){
     return *(int*)a + *(int*)b;
 }
-int insertionSort(int arr,int n){
+int insertionSort(int *arr,int n){
     qsort(arr,n,sizeof(int),compare);
 }
 int printArray(int arr,int n){
