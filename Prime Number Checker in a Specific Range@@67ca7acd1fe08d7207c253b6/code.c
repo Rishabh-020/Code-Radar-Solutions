@@ -10,6 +10,8 @@ int is_prime(int n){
 }
 int printPrimesInRange(int a,int b){
     for(int i=a;i<=b;i++){
-        printf("%d ",is_prime(i));
+        if(is_prime(i)!=0){
+            printf("%d ",is_prime(i));
+        }
     }
 }
