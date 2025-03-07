@@ -1,12 +1,16 @@
 #include<stdio.h>
-#include<stdlib.h>
-int compare(const void *a,const void *b){
-    return *(int*)a + *(int*)b;
-}
 int insertionSort(int *arr,int n){
-    qsort(arr,n,sizeof(int),compare);
+    for(int i=0;i<n;i++){
+        for(int j=i;j<n-i-1;i++){
+            if(arr[j]>arr[j+1]){
+                int temp=arr[i];
+                arr[i]=arr[i+1];
+                arr[i+1]=temp;
+            }
+        }
+    }
 }
 int printArray(int *arr,int n){
     insertionSort(arr,n);
-    for(int i=0;i<n;i++)printf("%d",arr[i]);
+    for(int i=0;i<n;i++)printf("%d ",arr[i]);
 }
