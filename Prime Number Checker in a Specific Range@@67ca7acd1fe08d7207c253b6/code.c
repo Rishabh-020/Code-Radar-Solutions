@@ -8,7 +8,7 @@ int is_prime(int n){
     }
     return n;
 }
-printPrimesInRange(int a,int b){
+int printPrimesInRange(int a,int b){
     for(int i=a;i<=b;i++){
         printf("%d ",is_prime(i));
     }
