@@ -8,7 +8,7 @@ int sort_array(int arr[],int n){
         }
     }
 }
-int kthSmallest(int arr,int n,int k){
+int kthSmallest(int arr[],int n,int k){
     sort_array(int arr,int n);
     printf("%d",arr[k-1]);
 }
