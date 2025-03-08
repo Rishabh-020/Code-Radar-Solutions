@@ -10,7 +10,7 @@ int main(){
     }
     for(int i=0;i<len;i++){
         for(int j=i+1;j<len;j++){
-            if(tolower(str[i])!=tolower(str[j]) && count=0){
+            if(tolower(str[i])!=tolower(str[j])){
                 count=1;
             }
         }
