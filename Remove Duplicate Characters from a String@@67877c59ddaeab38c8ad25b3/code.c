@@ -9,9 +9,9 @@ int main(){
         str[strlen(str)-1]='\0';
     }
     for(int i=0;str[i]!='\0';i++){
-        if(!new_str[(unsigned char)str[i]]){
+        if(!new_str[str[i]]){
             new_str[k++]=str[i];
-            new_str[(unsigned char)str[i]]=1;
+            new_str[str[i]]=1;
         }
     }
     for(int i=0;new_str[i]!='\0';i++){
