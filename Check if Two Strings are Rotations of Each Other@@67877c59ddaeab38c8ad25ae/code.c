@@ -13,7 +13,7 @@ int main(){
         str2[len2]='\0';
     }
     for(int i=1;i<len1;i++){
-        if(i>len2-1 && str1[i]==str2[i+1] || str1[i]==str2[i-1] && i>0 || str[i]==str[j] && i<len2)count++;
+        if((i>len2-1 && str1[i]==str2[i+1]) || (str1[i]==str2[i-1] && i>0) || (str[i]==str[j] && i<len2))count++;
     }
     if(count==len1){
         printf("Yes");
