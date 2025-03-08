@@ -4,7 +4,7 @@
 int main(){
     char str[1000],string;
     fgets(str,1000,stdin);
-    int len=strlen(str);
+    int len=strlen(str),count=0;
     if(str[len-1]=='\n'){
         str[len-1]='\0';
     }
