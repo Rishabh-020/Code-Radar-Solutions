@@ -2,8 +2,8 @@
 #include<string.h>
 #include<ctype.h>
 int main(){
-    int freq[1001]={0};
-    char str[1000],find;
+    int freq[256]={0};
+    char str[1000],find=' ';
     fgets(str,1000,stdin);
     int len=strlen(str);
     if(str[len-1]=='\n'){
