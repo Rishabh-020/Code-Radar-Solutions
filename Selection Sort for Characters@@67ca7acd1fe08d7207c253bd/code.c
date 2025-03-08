@@ -13,6 +13,6 @@ int selectionSort(char arr[],int num){
 int printArray(char arr[],int num){
     selectionSort(arr,num);
     for(int i=0;i<num;i++){
-        printf("%d ",arr[i]);
+        printf("%c ",arr[i]);
     }
 }
