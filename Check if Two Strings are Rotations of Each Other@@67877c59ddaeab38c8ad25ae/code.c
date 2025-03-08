@@ -15,7 +15,7 @@ int main(){
     for(int i=0;i<len1;i++){
         if((i>len2-1 && str1[i]==str2[i+1]) ||
            (str1[i]==str2[i-1] && i>0) ||
-           (str[i]==str[j] && i<len2)){
+           (str1[i]==str2[j] && i<len2)){
             count++;
            }
     }
