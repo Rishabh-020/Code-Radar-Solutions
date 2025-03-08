@@ -15,7 +15,7 @@ int main(){
                 find=str[i];
                 count=1;
             }
-        }if(find==' ')break;
+        }if(find!=' ')break;
     }
     printf("%c",find);
 }
