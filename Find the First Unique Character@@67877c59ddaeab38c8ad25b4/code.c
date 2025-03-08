@@ -13,7 +13,7 @@ int main(){
         for(int j=i+1;j<len;j++){
             if(tolower(str[i])!=tolower(str[j]) && count==0){
                 find=str[i];
-                count=1
+                count=1;
             }
         }if(find==' '){
             continue;
