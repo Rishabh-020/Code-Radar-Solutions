@@ -8,10 +8,10 @@ int main(){
         scanf("%d",&arr[i]);
     }
     for(int i=0;i<num;i++){
-        for(int j=0;j<num-i-1;j++){
-            int temp=arr[j];
-            arr[j]=arr[j+1];
-            arr[j+1]=temp;
+        while(arr[i]>0 && arr[i]<=num && arr[arr[i]-1]!=arr[i]){
+            int temp=arr[i];
+            arr[arr[i]-1]=arr[i];
+            arr[temp-1]=temp;
         }
     }
     for(int i=0;i<num;i++){
