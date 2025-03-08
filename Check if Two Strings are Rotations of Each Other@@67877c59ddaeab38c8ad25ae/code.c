@@ -13,7 +13,7 @@ int main(){
         str2[len2]='\0';
     }
     for(int i=0;i<len1;i++){
-        if((i>len2-1 && str1[i]==str2[i+1]) ||
+        if((i<len2-1 && str1[i]==str2[i+1]) ||
            (str1[i]==str2[i-1] && i>0) ||
            (str1[i]==str2[i] && i<len2)){
             count++;
