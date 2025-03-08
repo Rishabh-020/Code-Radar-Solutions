@@ -5,17 +5,20 @@ int main(){
     char str[1000];
     fgets(str,1000,stdin);
     int len=strlen(str);
-    if(str[len-1]=='\n'){
+    if(str[len-1]=='\n',count=0){
         str[len-1]='\0';
     }
     for(int i=0;i<len;i++){
         for(int j=i+1;j<len;j++){
-            if(tolower(str[i])!=tolower(str[j])){
-                printf("%c",str[i]);
-                return 0;
+            if(tolower(str[i])!=tolower(str[j]) && count=0){
+                count=1;
             }
         }
     }
-    printf("-");
+    if(count==1){
+        printf("%d",str[i]);
+    }else{
+        printf("-");
+    }
     return 0;
 }
