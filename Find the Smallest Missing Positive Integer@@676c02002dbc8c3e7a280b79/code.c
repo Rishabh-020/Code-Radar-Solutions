@@ -14,5 +14,12 @@ int main(){
             arr[j+1]=temp;
         }
     }
+    for(int i=0;i<num;i++){
+        if(arr[i]!=i+1){
+            printf("%d",i+1);
+            return 0;
+        }
+    }
+    printf("%d",num+1);
     return 0;
 }
