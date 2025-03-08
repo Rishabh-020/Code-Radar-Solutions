@@ -13,6 +13,10 @@ int main(){
             if(tolower(str[i])!=tolower(str[j])){
                 find=str[i];
             }
+        }if(find==' '){
+            continue;
+        }else{
+            break;
         }
     }
     printf("%c",find);
