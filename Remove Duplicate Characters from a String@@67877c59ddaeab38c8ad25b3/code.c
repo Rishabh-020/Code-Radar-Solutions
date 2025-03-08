@@ -17,7 +17,7 @@ int main(){
         }
     }
     for(int i=0;new_str[i]!='\0';i++){
-        printf("%c",new_str[i]);
+        printf("%c ",new_str[i]);
     }
     return 0;
 }
