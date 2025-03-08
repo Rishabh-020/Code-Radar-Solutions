@@ -13,7 +13,7 @@ int main(){
     }
     for(int i=0;str[i]!='\0';i++){
         if(freq[str[i]]>0){
-            printf("%c: %d",str[i],freq[str[i]]);
+            printf("%c: %d\n",str[i],freq[str[i]]);
             freq[str[i]]=0;
         }
     }
