@@ -2,7 +2,7 @@
 #include<string.h>
 #include<ctype.h>
 int main(){
-    char str[1000],feq[1001]={0};
+    char str[1000],freq[1001]={0};
     fgets(str,1000,stdin);
     if(str[strlen(str)-1]=='\n'){
         str[strlen(str)-1]='\0';
