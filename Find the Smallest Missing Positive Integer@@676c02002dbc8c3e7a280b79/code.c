@@ -7,13 +7,12 @@ int main(){
     for(int i=0;i<num;i++){
         scanf("%d",&arr[i]);
     }
-    int max=INT_MIN,min=INT_MAX;
     for(int i=0;i<num;i++){
-        if(arr[i]>max)max=arr[i];
-        if(arr[i]<min)min=arr[i];
+        for(int j=0;j<num-i-1;j++){
+            int temp=arr[j];
+            arr[j]=arr[j+1];
+            arr[j+1]=temp;
+        }
     }
-    for(int i=min;i<max;i++)
-    printf("%d ",i);
-    // printf("%d",max+1);
     return 0;
 }
