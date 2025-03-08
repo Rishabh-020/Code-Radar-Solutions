@@ -2,7 +2,7 @@
 #include<string.h>
 #include<ctype.h>
 int main(){
-    int count=0
+    int count=0;
     char str[1000],find;
     fgets(str,1000,stdin);
     int len=strlen(str);
