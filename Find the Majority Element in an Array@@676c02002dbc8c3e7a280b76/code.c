@@ -8,7 +8,7 @@ int find_maj(int arr[],int num){
         }else if(arr[i]==candidate)count++;
         else count--;
     }
-    int count=0;
+    count=0;
     for(int i=0;i<num;i++){
         if(arr[i]==candidate){
             count++;
