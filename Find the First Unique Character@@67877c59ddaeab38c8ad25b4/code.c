@@ -13,8 +13,10 @@ int main(){
         if(str[i]!=' ')freq[str[i]]++;
     }
     for(int i=0;i<len;i++){
-        if(str[i]!=' ' && freq[str[i]]==1)find=str[i];
-        break;
+        if(str[i]!=' ' && freq[str[i]]==1){
+            find=str[i];
+            break;
+        }
     }
     if(find==' '){
         printf("-");
