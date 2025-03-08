@@ -17,5 +17,8 @@ int main(){
             }
         }if(find!=' ')break;
     }
+    if(find==' '){
+        printf("-");
+    }else
     printf("%c",find);
 }
