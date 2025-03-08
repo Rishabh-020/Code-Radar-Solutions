@@ -12,8 +12,7 @@ int main(){
         for(int j=i+1;j<len;j++){
             if(tolower(str[i])!=tolower(str[j])){
                 string=str[i];
-                count=1
-                return 0;
+                count=1;
             }
         }
     }
