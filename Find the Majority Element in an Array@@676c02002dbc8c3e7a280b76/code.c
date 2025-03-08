@@ -8,7 +8,7 @@ int find_maj(int arr[],int num){
         }else if(arr[i]==candidate)count++;
         else count--;
     }
-    if(count>n/2){
+    if(count>num/2){
         return candidate;
     }
     return -1;
