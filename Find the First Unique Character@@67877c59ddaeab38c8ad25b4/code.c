@@ -4,8 +4,8 @@
 int main(){
     char str[1000];
     fgets(str,1000,stdin);
-    int len=strlen(str);
-    if(str[len-1]=='\n',count=0){
+    int len=strlen(str),count=0;
+    if(str[len-1]=='\n'){
         str[len-1]='\0';
     }
     for(int i=0;i<len;i++){
