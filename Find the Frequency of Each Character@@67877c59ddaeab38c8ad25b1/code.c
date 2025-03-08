@@ -9,14 +9,13 @@ int main(){
         str[strlen(str)-1]='\0';
     }
     for(int i=0;str[i]!='\0';i++){
-        for(int j=0;str[j]!='\0';j++){
-            if(str[i]==str[j]){
-                freq[str[i]]++;
-            }
-        }
+        freq[(unsigned char)str[i]]++;
     }
     for(int i=0;str[i]!='\0';i++){
-        printf("%c: %d\n",str[i],freq[str[i]]);
+        if(freq[str[i]]>0){
+            printf("%c: %d",str[i],freq[str[i]]);
+            freq[str[i]]=0;
+        }
     }
     return 0;
 }
