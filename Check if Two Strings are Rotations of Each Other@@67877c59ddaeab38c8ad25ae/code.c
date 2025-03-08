@@ -12,7 +12,7 @@ int main(){
     if(str2[len2]=='\n'){
         str2[len2]='\0';
     }
-    for(i=1;i<len1;i++){
+    for(int i=1;i<len1;i++){
         if(str1[i]==str2[i+1] || str[i]==str2[i-1])count++;
     }
     if(count==len1){
