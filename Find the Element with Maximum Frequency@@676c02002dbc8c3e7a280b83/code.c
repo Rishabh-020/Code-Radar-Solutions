@@ -12,6 +12,7 @@ int main(){
     for(int i=0;i<count-1;i++){
         if(freq[unique[i]]>=freq[unique[i+1]])
         printf("%d",unique[i]);
+        break;
     }
     return 0;
 }
