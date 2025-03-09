@@ -9,10 +9,13 @@ int main(){
         if(freq[arr[i]]==0)unique[count++]=arr[i];
         freq[arr[i]]++;
     }
+    int max_freq=0;save;
     for(int i=0;i<count-1;i++){
-        if(freq[unique[i]]>=freq[unique[i+1]])
-        printf("%d",unique[i]);
-        break;
+        if(freq[unique[i]]>max_freq){
+            max_freq=freq[unique[i]];
+            save=unique[i];
+        }
     }
+    printf("%d",save);
     return 0;
 }
