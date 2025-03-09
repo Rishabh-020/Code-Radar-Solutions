@@ -10,7 +10,7 @@ int main(){
         freq[arr[i]]++;
     }
     for(int i=0;i<count-1;i++){
-        if(freq[i]>freq[i+1])
+        if(freq[i]>=freq[i+1])
         printf("%d",unique[i]);
     }
     return 0;
