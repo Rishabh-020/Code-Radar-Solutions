@@ -10,7 +10,7 @@ int main(){
         freq[arr[i]]++;
     }
     for(int i=0;i<count;i++){
-        printf("%d %d\n ",unique[i],freq[i]);
+        printf("%d %d\n",unique[i],freq[i]);
     }
     return 0;
 }
