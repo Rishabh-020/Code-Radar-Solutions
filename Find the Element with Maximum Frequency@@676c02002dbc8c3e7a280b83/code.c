@@ -8,7 +8,7 @@ int main(){
         freq[arr[i]]++;
     }
     for(int i=0;i<num;i++){
-        printf("%d",freq[arr[i]]);
+        printf("%d ",freq[i]);
     }
     return 0;
 }
