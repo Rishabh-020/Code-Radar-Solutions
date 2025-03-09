@@ -9,7 +9,7 @@ int main(){
         if(freq[arr[i]]==0)unique[count++]=arr[i];
         freq[arr[i]]++;
     }
-    int max_freq=0;save;
+    int max_freq=0,save;
     for(int i=0;i<count-1;i++){
         if(freq[unique[i]]>max_freq){
             max_freq=freq[unique[i]];
