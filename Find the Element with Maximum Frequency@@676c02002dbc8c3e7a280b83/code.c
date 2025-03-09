@@ -9,8 +9,8 @@ int main(){
         if(freq[arr[i]]==0)unique[count++]=arr[i];
         freq[arr[i]]++;
     }
-    for(int i=0;i<num;i++){
-        printf("%d ",freq[i]);
+    for(int i=0;i<count;i++){
+        printf("%d %d ",unique[i],freq[i]);
     }
     return 0;
 }
