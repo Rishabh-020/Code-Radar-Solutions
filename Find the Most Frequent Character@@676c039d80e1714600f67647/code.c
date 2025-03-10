@@ -10,7 +10,7 @@ int count_freq(char arr[],int num){
     int max=0;
     for(int i=0;i<256;i++){
         if(freq[i]>max){
-            max=freq;
+            max=freq[i];
             find=char(i);
         }
     }
