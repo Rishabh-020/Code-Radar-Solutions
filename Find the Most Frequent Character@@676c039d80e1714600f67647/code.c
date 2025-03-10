@@ -4,7 +4,6 @@ int count_freq(char arr,int num){
     char unique[num];
     int count=0,freq[256]={0};
     for(int i=0;i<num;i++){
-        if(unique[unsigned char(arr[i])]==0)unique[count++]=arr[i];
         freq[unique[i]]++;
     }
     int uniq_count=0;
