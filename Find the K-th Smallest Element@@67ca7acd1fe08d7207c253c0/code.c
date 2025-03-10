@@ -11,6 +11,6 @@ void sort_array(int *arr[], int n) {
     }
 }
 int kthSmallest(int *arr[],int n,int k){
-    sort_array(*arr,n);
+    // sort_array(*arr,n);
     printf("%d",arr[k-1]);
 }
