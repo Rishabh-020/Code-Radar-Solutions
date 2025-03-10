@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<string.h>
-int count_freq(char arr,int num){
+int count_freq(char arr[],int num){
     char unique[num];
     int count=0,freq[256]={0};
     for(int i=0;i<num;i++){
@@ -19,7 +19,7 @@ int count_freq(char arr,int num){
 int main(){
     char str[1000];
     fgets(str,1000,stdin);
-    int len=str[strlen(str)-1]-1;
+    int len=str[strlen(str)-1];
     if(str[len]=='\n')str[len]='\0';
     count_freq(str,len);
     return 0;
