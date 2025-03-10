@@ -6,12 +6,12 @@ int count_freq(char arr[],int num){
     for(int i=0;i<num;i++){
         freq[unique[i]]++;
     }
-    int uniq_count=0;
     char find=' ';
-    for(int i=0;i<count;i++){
-        if(freq[unique[i]]>uniq_count){
-            uniq_count=freq[unique[i]];
-            find=unique[i];
+    int max=0;
+    for(int i=0;i<256;i++){
+        if(freq[i]>max){
+            max=freq;
+            find=char(i);
         }
     }
     printf("%c",find);
