@@ -18,7 +18,7 @@ int main() {
         printf("No");
         return 0;
     }
-    for(int i=0=;str1[i]!=0;i++){
+    for(int i=0;str1[i]!=0;i++){
         freq[str1[i]]++;
         freq[str2[i]]--;
     }
