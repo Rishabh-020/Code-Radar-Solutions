@@ -19,6 +19,7 @@ int main()
         scanf("%f",&student[i].grade);
         count+=student[i].grade;
     }
-    printf("%.2f",count);
+    float cal=count/num;
+    printf("Average Marks: %.2f",cal);
     return 0;
 }
