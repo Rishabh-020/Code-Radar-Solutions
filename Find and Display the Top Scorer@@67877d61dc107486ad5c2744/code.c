@@ -22,8 +22,9 @@ int main()
          if (students[i].marks > maxMarks) {
             maxMarks = students[i].marks;
             topScorer = students[i]; 
-        }
-
+         }
     }
+     printf("Top Scorer: Roll Number: %.0lf, Name: %s, Marks: %.2f", topScorer.rollNumber,topScorer.name,topScorer.marks);
+
     return 0;
 }
