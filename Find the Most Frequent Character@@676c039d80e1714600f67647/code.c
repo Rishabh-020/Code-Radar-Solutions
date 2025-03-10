@@ -13,7 +13,7 @@ int count_freq(char arr[],int num){
             result=(char)i;
         }
     }
-    printf("%d",result);
+    printf("%c",result);
 }
 int main(){
     char str[1000];
