@@ -20,8 +20,7 @@ int main()
     for(int i=0;i<num;i++){
         printf("Roll Number: %d, ",student[i].id );
         printf("Name: %s, ",student[i].name);
-        printf("Marks: %.2f ",student[i].grade);
-        printf("\n");
+        printf("Marks: %.2f\n",student[i].grade);
     }
     return 0;
 }
