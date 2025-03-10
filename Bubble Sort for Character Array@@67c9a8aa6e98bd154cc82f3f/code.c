@@ -2,7 +2,7 @@
 char bubbleSort(char arr,int n){
     char st='a';
     for(int i=1;i<n;i++){
-        if(arr[i]<st){
+        if(int(arr[i])<st){
             char temp=st;
             st=arr[i];
             arr[i]=temp;
