@@ -1,20 +1,19 @@
 #include<stdio.h>
 #include<string.h>
 int count_freq(char arr[],int num){
-    char unique[num];
-    int count=0,freq[256]={0};
-    for(int i=0;i<num;i++){
-        freq[unique[i]]++;
+    int count_freq[256]={0};
+    for(int i=0;arr[i]!='\0';i++){
+        count_freq[arr[i]]++;
     }
-    char find=' ';
-    int max=0;
+    int count=0;
+    int result=' ';
     for(int i=0;i<256;i++){
-        if(freq[i]>max){
-            max=freq[i];
-            find=i;
+        if(count_freq[i]>count){
+            count=count_freq[i];
+            result=char(i);
         }
     }
-    printf("%c",find);
+    printf("%d",result);
 }
 int main(){
     char str[1000];
