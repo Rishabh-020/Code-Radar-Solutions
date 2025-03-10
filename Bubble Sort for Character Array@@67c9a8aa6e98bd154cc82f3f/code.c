@@ -1,6 +1,6 @@
 #include<stdio.h>
 char bubbleSort(char arr,int n){
-    char st=' ';
+    char st='a';
     for(int i=1;i<n;i++){
         if(arr[i]<st){
             char temp=st;
