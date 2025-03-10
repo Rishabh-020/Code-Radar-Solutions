@@ -11,7 +11,7 @@ int count_freq(char arr[],int num){
     for(int i=0;i<256;i++){
         if(freq[i]>max){
             max=freq[i];
-            find=char(i);
+            find=i;
         }
     }
     printf("%c",find);
