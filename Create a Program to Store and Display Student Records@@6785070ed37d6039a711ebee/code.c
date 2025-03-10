@@ -21,6 +21,7 @@ int main()
         printf("Student Id: %d, ",student[i].id );
         printf("Student Name: %s, ",student[i].name);
         printf("Student Grade: %.2f, ",student[i].grade);
+        printf("\n");
     }
     return 0;
 }
