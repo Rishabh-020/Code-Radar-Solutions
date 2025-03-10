@@ -10,7 +10,7 @@ int count_freq(char arr[],int num){
     for(int i=0;i<256;i++){
         if(count_freq[i]>count){
             count=count_freq[i];
-            result=char(i);
+            result=(char)i;
         }
     }
     printf("%d",result);
