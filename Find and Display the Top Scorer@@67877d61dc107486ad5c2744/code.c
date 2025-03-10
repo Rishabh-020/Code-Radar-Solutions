@@ -22,5 +22,5 @@ int main() {
     }
     printf("Top Scorer: Roll Number: %.0lf, Name: %s, Marks: %.2f", topScorer.rollNumber,topScorer.name,topScorer.marks);
 
-    return 0;
+    return 0;
 }
