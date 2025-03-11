@@ -2,7 +2,7 @@
 struct Rectagle{
     int lenght;
     int breadth;
-}
+};
 int main(){
     int num;
     scanf("%d",&num);
