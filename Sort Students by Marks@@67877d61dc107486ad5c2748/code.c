@@ -20,7 +20,7 @@ int main()
         count1+=student[i].grade;
     }
     for(int i=0;i<num-1;i++){
-        if(student[i].grade>student[i+1].grade){
+        if(student[i].grade<student[i+1].grade){
             struct Student temp=student[i+1];
             student[i+1]=student[i];
             student[i]=temp;
