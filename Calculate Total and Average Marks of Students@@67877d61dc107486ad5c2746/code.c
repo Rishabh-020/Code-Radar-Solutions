@@ -16,7 +16,7 @@ int main()
         scanf("%d",&student[i].id );
         scanf("%s",student[i].name);
         scanf("%f",&student[i].grade);
-        count1+=student.grade;
+        count1+=student[i].grade;
     }
     printf("Total Marks: %.2f",count1);
     printf("Average Marks: %.2f",count1/num);
