@@ -19,5 +19,17 @@ int main()
         scanf("%f",&student[i].grade);
         count1+=student[i].grade;
     }
+    for(int i=0;i<num-1;i++){
+        if(student[i].grade>student[i+1].grade){
+            int temp=i+1;
+            i+1=i;
+            i=temp;
+        }
+    }
+    for(int i=0;i<num;i++){
+        printf("Roll Number: %d, ",student[i].id );
+        printf("Name: %s, ",student[i].name);
+        printf("Marks: %.2f\n",student[i].grade);
+    }
     return 0;
 }
