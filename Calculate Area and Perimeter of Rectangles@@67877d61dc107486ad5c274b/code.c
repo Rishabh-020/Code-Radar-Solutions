@@ -11,7 +11,6 @@ int main(){
         scanf("%d",&ap[i].lenght);
         scanf("%d",&ap[i].breadth);
     }
-    float cal=;
     for(int i=0;i<num;i++){
         printf("Rectagle %d: Area = %.2f, Perimeter = %.2f",i+1,
         (ap[i].lenght)*(ap[i].breadth),2*(ap[i].lenght+ap[i].breadth));
