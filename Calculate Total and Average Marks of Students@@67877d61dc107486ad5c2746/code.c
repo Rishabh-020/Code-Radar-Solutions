@@ -9,7 +9,8 @@ struct Student
 
 int main()
 {
-    int num,count1=0;
+    int num;
+    float count1=0.00;
     scanf("%d", &num);
     struct Student student[num];
     for(int i=0;i<num;i++){
@@ -18,7 +19,7 @@ int main()
         scanf("%f",&student[i].grade);
         count1+=student[i].grade;
     }
-    printf("Total Marks: %.2f",count1);
+    printf("Total Marks: %.2f\n",count1);
     printf("Average Marks: %.2f",count1/num);
     return 0;
 }
