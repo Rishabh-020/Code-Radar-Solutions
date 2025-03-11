@@ -21,7 +21,7 @@ int main()
     printf("Books above price %.2f:\n",(float)count1);
     for(int i=0;i<num;i++){
         if(student[i].cost>=count1){
-            printf("Title: %s, Author: %s, Price: %.2f\n",student[i].id,student[i].name,student[i].cost);
+            printf("Title: %s, Author: %s, Price: %.2f\n",student[i].id,student[i].name,(float)student[i].cost);
         }
     }
     return 0;
