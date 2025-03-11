@@ -21,9 +21,9 @@ int main()
     }
     for(int i=0;i<num-1;i++){
         if(student[i].grade>student[i+1].grade){
-            int temp=i+1;
-            i+1=i;
-            i=temp;
+            int temp=student[i+1];
+            student[i+1]=student[i];
+            student[i]=temp;
         }
     }
     for(int i=0;i<num;i++){
