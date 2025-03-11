@@ -22,7 +22,7 @@ int main()
         if(find==student[i].id){
             printf("Roll Nunber: %d, Name: %s,Marks: %.2f",student[i].id,student[i].name,student[i].grade);
             return 0;
-    }
+    }}
     printf("Student not found");
     return 0;
-}}
+}
