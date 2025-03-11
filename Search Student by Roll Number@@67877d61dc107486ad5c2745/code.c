@@ -20,7 +20,7 @@ int main()
     scanf("%d", &find);
     for(int i=0;i<num;i++){
         if(find==student[i].id){
-            printf("Roll Number: %d, Name: %s,Marks: %.2f",student[i].id,student[i].name,student[i].grade);
+            printf("Roll Number: %d, Name: %s, Marks: %.2f",student[i].id,student[i].name,student[i].grade);
             return 0;
         }
     }
