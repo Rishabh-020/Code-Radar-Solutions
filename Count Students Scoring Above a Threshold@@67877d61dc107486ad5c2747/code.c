@@ -11,7 +11,7 @@ int main(){
     for(int i=0;i<num;i++){
         scanf("%d",&student[i].id);
         scanf("%s",&student[i].name);
-        scanf("%.2f",&student[i].score);
+        scanf("%f",&student[i].score);
     }
     float target;
     scanf("%f",&target);
