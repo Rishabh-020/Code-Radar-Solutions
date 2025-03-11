@@ -5,7 +5,8 @@ struct Student{
     float score;
 };
 int main(){
-    int num,max=100000,j=0;
+    int num,j=0;
+    float max=100000.00;
     scanf("%d",&num);
     struct Student student[num];
     for(int i=0;i<num;i++){
