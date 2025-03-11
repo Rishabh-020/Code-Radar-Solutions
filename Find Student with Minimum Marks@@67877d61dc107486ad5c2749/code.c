@@ -16,7 +16,7 @@ int main(){
     for(int i=0;i<num;i++){
         if(student[i].score<max){
             max=student[i].score;
-            j=i
+            j=i;
         }
     }
     printf("Student with Minimum Marks: Roll Number: %d, Name: %s, Marks: %.2f"
