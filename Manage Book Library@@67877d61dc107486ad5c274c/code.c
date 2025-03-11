@@ -2,7 +2,7 @@
 #include<string.h>
 struct Student
 {
-    char id;
+    char id[50];
     char name[50];
     int cost;
 };
