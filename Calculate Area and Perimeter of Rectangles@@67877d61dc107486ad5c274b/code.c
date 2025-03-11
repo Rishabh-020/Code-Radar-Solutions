@@ -9,7 +9,7 @@ int main(){
     struct Rectagle ap[num];
     for(int i=0;i<num;i++){
         scanf("%d",&ap[i].lenght);
-        scnaf("%d",&ap[i].breadth);
+        scanf("%d",&ap[i].breadth);
     }
     float cal=0.00;
     for(int i=0;i<num;i++){
