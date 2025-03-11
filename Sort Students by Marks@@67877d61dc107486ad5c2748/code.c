@@ -21,7 +21,7 @@ int main()
     }
     for(int i=0;i<num-1;i++){
         if(student[i].grade>student[i+1].grade){
-            struct student temp=student[i+1];
+            struct Student temp=student[i+1];
             student[i+1]=student[i];
             student[i]=temp;
         }
