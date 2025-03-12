@@ -10,7 +10,7 @@ int main(){
     struct toll t[num];
     for(int i=0;i<num;i++){
         scanf("%s %s %d",&t[i].plate,&t[i].name,&t[i].price);
-        if(t[i].name=='Car'){
+        if(t[i].name=="Car"){
             c1+=t[i].price;
         }else if(t[i].name=='Truck'){
             c2+=t[i].price;
