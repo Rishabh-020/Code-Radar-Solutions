@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<string.h>
+#include<ctypes.h>
 int main(){
     char string[1000];
     fgets(string,1000,stdin);
