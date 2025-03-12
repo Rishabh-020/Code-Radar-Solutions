@@ -8,10 +8,10 @@ int main(){
     for(int i=0;i<=len;i++){
         if((int)string[i]<97){
             string[i]+=32;
-            printf("%c",str[i]);
+            printf("%c",string[i]);
         }else{
             string[i]-=32;
-            printf("%c",str[i]);
+            printf("%c",string[i]);
         }
     }
     printf("%d",'a');
