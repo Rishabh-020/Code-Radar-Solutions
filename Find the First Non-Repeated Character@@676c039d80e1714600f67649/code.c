@@ -3,7 +3,7 @@
 int main(){
     char str[1000],cha=' ';
     scanf("%s",str);
-    int len=strlen(str)-1;
+    int len=strlen(str);
     for(int i=0;i<len;i++){
         for(int j=i+1;i<len;j++){
             if(str[i]==str[j]){
