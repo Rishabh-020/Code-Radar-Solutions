@@ -3,7 +3,7 @@ struct Employee{
     int id;
     char name[100];
     int salary;
-    float bonus;
+    float bonus=0.00;
 };
 int main(){
     int num;
