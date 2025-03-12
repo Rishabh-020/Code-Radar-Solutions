@@ -3,7 +3,7 @@
 struct toll{
     char plate[100];
     char name[100];
-    int price;
+    float price;
 };
 int main(){
     int num,count1=0,count2=0,count3=0;
@@ -11,7 +11,7 @@ int main(){
     scanf("%d",&num);
     struct toll t[num];
     for(int i=0;i<num;i++){
-        scanf("%s %s %d",&t[i].plate,&t[i].name,&t[i].price);
+        scanf("%s %s %f",&t[i].plate,&t[i].name,&t[i].price);
         if(strcmp(t[i].name,"Basic")==0){
             c1+=t[i].price;
             count1++;
