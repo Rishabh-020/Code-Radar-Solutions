@@ -12,7 +12,7 @@ int main(){
             if(str[i]==str[j]){
                 cha=str[i];   
             }
-        }if(cha!=' '){
+        }if(cha!=" "){
             printf("%c",cha);
             return 0;
         }
