@@ -11,6 +11,7 @@ int main(){
         for(int j=i+1;i<len;j++){
             if(str[i]==str[j]){
                 printf("%c",str[i]);
+                return 0;
             }
         }
     }
