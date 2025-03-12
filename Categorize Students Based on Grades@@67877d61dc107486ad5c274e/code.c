@@ -16,9 +16,9 @@ int main(){
         else if(student[i].num<=84 && student[i].num>=70){
             printf("Roll Number: %d, Name: %s, Grade: B",student[i].id,student[i].name);
         }
-        else {
-            printf("Roll Number: %d, Name: %s, Grade: C",student[i].id,student[i].name);
-        }
+        // else {
+        //     printf("Roll Number: %d, Name: %s, Grade: C",student[i].id,student[i].name);
+        // }
     }
     return 0;
 }
