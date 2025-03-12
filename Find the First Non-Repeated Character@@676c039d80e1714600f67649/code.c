@@ -2,7 +2,7 @@
 #include<string.h>
 int main(){
     char str[1000],cha=' ';
-    scanf("%s",&str);
+    scanf("%s",str);
     int len=strlen(str)-1;
     if(str[len]=='\n'){
         str[len]='\0';
