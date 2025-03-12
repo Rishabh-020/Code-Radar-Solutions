@@ -25,6 +25,5 @@ int main(){
             printf("%c",string[i]);
         }
     }
-    printf("%d",'a');
     return 0;
 }
