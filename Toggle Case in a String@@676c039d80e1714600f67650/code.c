@@ -22,7 +22,7 @@ int main(){
             tolower(string[i]);
             printf("%c",string[i]);
         }else{
-            printf("%c",str[i]);
+            printf("%c",string[i]);
         }
     }
     printf("%d",'a');
