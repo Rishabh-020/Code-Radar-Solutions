@@ -9,7 +9,7 @@ int main(){
     }
     for(int i=0;i<len;i++){
         for(int j=i+1;i<len;j++){
-            if(strcmp(str[i],str[j])==0){
+            if(str[i]==str[j]){
                 printf("%c",str[i]);
                 return 0;
             }
