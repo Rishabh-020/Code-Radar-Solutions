@@ -9,10 +9,10 @@ int main(){
     char find[1000];
     scanf("%s",&find);
     for(int i=j;i<len;i++){
-        if(arr[i]==' '){
-            word=
-            if(strcmp())
-        }
+        // if(arr[i]==' '){
+        //     word=
+        //     if(strcmp())
+        // }
     }
     return 0;
 }
