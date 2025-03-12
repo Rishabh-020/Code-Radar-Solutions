@@ -14,7 +14,7 @@ int main(){
     }
     for(int i=0;i<num;i++){
         if(employee[i].salary<50000){
-            employee[i].bonus=(float)(10*employee[i].salary)/100;
+            employee[i].bonus=0.1*(float)employee[i].salary;
         }else{
             employee[i].bonus=(float)(5*employee[i].salary)/100;
         }
