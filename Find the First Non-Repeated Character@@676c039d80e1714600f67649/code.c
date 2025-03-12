@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<string.h>
 int main(){
-    char str[1000],cha=" ";
+    char str[1000],cha=' ';
     scanf("%s",&str);
     int len=strlen(str)-1;
     if(str[len]=='\n'){
@@ -12,7 +12,7 @@ int main(){
             if(str[i]==str[j]){
                 cha=str[i];   
             }
-        }if(cha!=" "){
+        }if(cha!=' '){
             printf("%c",cha);
             return 0;
         }
