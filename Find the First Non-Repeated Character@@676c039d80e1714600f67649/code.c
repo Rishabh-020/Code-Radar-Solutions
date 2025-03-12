@@ -19,7 +19,7 @@ int main(){
         freq[(int)str[i]]++;
     }
     for(int i=0;i<256;i++){
-        if(freq[i]==1){
+        if(freq[(int)str[i]]==1){
             printf("%c",freq[i]);
             return 0;
         }
