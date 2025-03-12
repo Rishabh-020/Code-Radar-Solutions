@@ -16,8 +16,7 @@ int main(){
         //     printf("%c",string[i]);
         // }
         if(islower(string[i])){
-            toupper(string[i]);
-            printf("%c",string[i]);
+            printf("%c",toupper(string[i]));
         }else if(isupper(string[i])){
             tolower(string[i]);
             printf("%c",string[i]);
