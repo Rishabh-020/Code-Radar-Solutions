@@ -23,6 +23,6 @@ int main(){
             count3++;
         }
     }
-    printf("Basic: %d Users, Revenue: %.2f: Standard: %d Users, Revenue: %.2f: Premium: %d Users, Revenue: %.2f\n"
+    printf("Basic: %d Users, Revenue: %.2f: Standard: %d Users, Revenue: %.2f: Premium: %d Users, Revenue: %.2f"
     ,count1,c1,count2,c2,count3,c3);
 }
