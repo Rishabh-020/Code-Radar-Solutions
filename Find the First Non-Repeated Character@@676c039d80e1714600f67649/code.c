@@ -16,7 +16,7 @@ int main(){
     //     }
     // }
     for(int i=0;str[i]!='\0';i++){
-        freq[(int)str[i]++];
+        freq[(int)str[i]]++;
     }
     for(int i=0;i<256;i++){
         if(freq[i]==1){
