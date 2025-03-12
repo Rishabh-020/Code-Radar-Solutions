@@ -21,6 +21,8 @@ int main(){
         }else if(isupper(string[i])){
             tolower(string[i]);
             printf("%c",string[i]);
+        }else{
+            printf("%c",str[i]);
         }
     }
     printf("%d",'a');
