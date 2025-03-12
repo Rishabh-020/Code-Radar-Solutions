@@ -8,7 +8,9 @@ int main(){
     int num;
     scanf("%d",&num);
     struct Student student[num];
-    for(int i=0;i<num;i++)scanf("%d %s &f",student[i].id,student[i].name,student[i].num);
+    for(int i=0;i<num;i++){
+        scanf("%d %s %f",student[i].id,student[i].name,student[i].num);
+    }
     // for(int i=0;i<num;i++){
         // if((int)student[i].num>=85){
         //     printf("Roll Number: %d, Name: %s, Grade: A",student[i].id,student[i].name);
