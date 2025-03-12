@@ -20,7 +20,7 @@ int main(){
     }
     for(int i=0;i<256;i++){
         if(freq[(int)str[i]]==1){
-            printf("%c",freq[i]);
+            printf("%c",freq[str[i]]);
             return 0;
         }
     }
