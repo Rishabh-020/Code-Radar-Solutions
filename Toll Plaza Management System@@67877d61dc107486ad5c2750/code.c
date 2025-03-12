@@ -19,5 +19,5 @@ int main(){
             c3+=t[i].price;
         }
     }
-    for(int i=0;i<num;i++)printf("Cars: %.2f, Trucks: %.2f, Bikes: %.2f\n",c1,c2,c3);
+    printf("Cars: %.2f, Trucks: %.2f, Bikes: %.2f\n",c1,c2,c3);
 }
