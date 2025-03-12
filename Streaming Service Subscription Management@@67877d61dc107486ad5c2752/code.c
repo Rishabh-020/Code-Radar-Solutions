@@ -15,7 +15,7 @@ int main(){
         if(strcmp(t[i].name,"Basic")==0){
             c1+=t[i].price;
             count1++;
-        }else if(strcmp(t[i].name,"Standaed")==0){
+        }else if(strcmp(t[i].name,"Standard")==0){
             c2+=t[i].price;
             count2++;
         }else{
