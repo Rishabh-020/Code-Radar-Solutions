@@ -18,7 +18,7 @@ int main(){
         }else{
             employee[i].bonus=(5*employee[i].salary)/100;
         }
-        printf("Employee ID: %d, Name: %s, Bonus: %.2f"
+        printf("Employee ID: %d, Name: %s, Bonus: %.2f\n"
         ,employee[i].id,employee[i].name,employee[i].bonus);
     }
 }
