@@ -10,7 +10,7 @@ int main(){
     float bonus[num];
     struct Employee employee[num];
     for(int i=0;i<num;i++){
-         scanf("%d %s %f",&employee[i].id,&employee[i].name,&employee[i].salary);
+         scanf("%d %s %d",&employee[i].id,&employee[i].name,&employee[i].salary);
     }
     for(int i=0;i<num;i++){
         if(employee[i].salary<50000){
