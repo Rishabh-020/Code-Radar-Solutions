@@ -9,7 +9,7 @@ int main(){
         if((int)string[i]<97){
             string[i]+=32;
             printf("%c",string[i]);
-        }else if(string[i]==' ') continue;
+        }else if(string[i]==' ') break;
         else{
             string[i]-=32;
             printf("%c",string[i]);
