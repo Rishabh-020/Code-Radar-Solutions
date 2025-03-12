@@ -12,7 +12,7 @@ int main(){
             if(str[i]==str[j]){
                 printf("%c",str[i]);
             }
-        }return 0;
+        }
     }
     printf("-");
     return 0;
