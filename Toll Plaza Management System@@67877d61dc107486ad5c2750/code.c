@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<string.h>
 struct toll{
     char plate[100];
     char name[100];
@@ -11,9 +12,9 @@ int main(){
     struct toll t[num];
     for(int i=0;i<num;i++){
         scanf("%s %s %d",&t[i].plate,&t[i].name,&t[i].price);
-        if(t[i].name=="Car"){
+        if(strcmp(t[i].name,"Car")==0){
             c1+=t[i].price;
-        }else if(t[i].name=="Truck"){
+        }else if(strcmp(t[i].name,"Truck")==0){
             c2+=t[i].price;
         }else{
             c3+=t[i].price;
