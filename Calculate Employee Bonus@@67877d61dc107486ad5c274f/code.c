@@ -2,7 +2,7 @@
 struct Employee{
     int id;
     char name[100];
-    double salary;
+    int salary;
     float bonus;
 };
 int main(){
