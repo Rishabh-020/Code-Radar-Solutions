@@ -11,7 +11,7 @@ int main(){
         for(int j=i+1;i<len;j++){
             if(str[i]==str[j]) cha=str[i];
         }if(cha!=' '){
-            printf("%c",cha)
+            printf("%c",cha);
             return 0;
         }
     }
