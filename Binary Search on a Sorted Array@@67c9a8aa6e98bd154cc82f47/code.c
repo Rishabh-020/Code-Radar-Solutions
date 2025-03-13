@@ -1,13 +1,12 @@
 int binarySearch(int arr[],int n,int target){
     int start=0,end=n;
     for(int i=start;i<end;i++){
-        if(arr[i]==target)return i;
-        else if(arr[i]<target){
-            start=(n+1)/2;
-            end=n;
+        int mid=start+(end-start)/2;
+        if(arr[mid]==target)return mid;
+        else if(arr[mid]<target){
+            start=mid+1; 
         }else{
-            start=0;
-            end=n/2;
+            end=mid-1;
         }
     }return -1;
 }
