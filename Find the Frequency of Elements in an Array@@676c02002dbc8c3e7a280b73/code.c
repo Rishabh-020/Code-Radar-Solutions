@@ -39,7 +39,7 @@ int main(){
         freq[arr[i]]++;
     }
     for(int i=0;i<count;i++){
-        printf("%d %d\n",freq_1[i],freq[arr[i]]);   
+        printf("%d %d\n",freq_1[i],freq[freq_1[i]]);   
     }
 }
 
