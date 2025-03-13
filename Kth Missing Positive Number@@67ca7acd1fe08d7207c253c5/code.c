@@ -1,8 +1,8 @@
 int findKthMissing(int arr[],int n,int k){
-    int j=0,p=0,new_arr[1001],find[1001];
+    int j=0,p=0,new_arr[n],find_var=0,find[k];
     for(int i=0;i<arr[n-1];i++){
-        if(arr[i]==i+1){
-            new_arr[j]=i+1;
+        if(arr[i]==find_var+1){
+            new_arr[j]=find_var+1;
             j++;
         }else{
             i=0;
