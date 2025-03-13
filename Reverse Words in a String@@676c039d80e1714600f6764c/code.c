@@ -9,9 +9,9 @@ int main(){
     int start=0,len=strlen(arr)-1;
     for(int i=start;i<len;i++){
         if(arr[i]==' '){
-        while(i!=0){
-            printf("%c",arr[i]);i--;
-        }
+        // while(i!=0){
+        //     printf("%c",arr[i]);i--;
+        // }
         }
     }
     return 0;
