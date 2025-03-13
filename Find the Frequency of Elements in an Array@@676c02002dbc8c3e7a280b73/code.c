@@ -33,8 +33,8 @@ int main(){
         scanf("%d",&arr[i]);
         freq[arr[i]]++;
     }
-    // for(int i=0;i<1001;i++){
-    //     printf("%d %d",arr[i],freq[arr[i]]);   
-    // }
+    for(int i=0;i<num;i++){
+        printf("%d %d",arr[i],freq[arr[i]]);   
+    }
 }
 
