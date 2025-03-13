@@ -26,14 +26,19 @@
 
 #include<stdio.h>
 int main(){
-    int num,freq[1001]={0};
+    int num,freq[1001]={0},count=0;
     scanf("%d",&num);
     int arr[num];
     for(int i=0;i<num;i++){
         scanf("%d",&arr[i]);
+    }
+    for(int i=0;i<num;i++){
+        if(freq[arr[i]]==0){
+            count++l
+        }
         freq[arr[i]]++;
     }
-    for(int i=0;i<1001;i++){
+    for(int i=0;i<count;i++){
         printf("%d %d\n",arr[i],freq[arr[i]]);   
     }
 }
