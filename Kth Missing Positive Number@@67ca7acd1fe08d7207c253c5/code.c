@@ -3,6 +3,7 @@ int findKthMissing(int arr[],int n,int k){
     for(int i=0;i<arr[n-1];i++){
         if(arr[i]==find_var+1){
             new_arr[j]=find_var+1;
+            i++;
             j++;
         }else{
             i=0;
