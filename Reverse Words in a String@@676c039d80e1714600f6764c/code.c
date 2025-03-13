@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<string.h>
 int reverse(char arr[],char word){
-    while arr<=word{
+    while (arr<=word){
         char temp=arr;
         arr=word;
         word=temp;
@@ -19,7 +19,9 @@ int main(){
     for(int i=start;i<len;i++){
         if(arr[i]==' '){
             reverse(first_word,&arr[i-1]);
+            first_word=arr[i+1];
         }
     }
+    printf("%s",arr);
     return 0;
 }
