@@ -7,7 +7,6 @@ int main(){
         arr[strlen(arr)-1]='\0';
     }
     int start=0,len=strlen(arr)-1;
-    char first_word=arr;
     for(int i=start;i<len;i++){
         
     }
