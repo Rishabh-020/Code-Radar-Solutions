@@ -10,7 +10,6 @@ int main(){
     for(int i=start;i<len;i++){
         if(arr[i]==' '){
             printf("%c",arr[i-1]);
-            i--;
         }
     }
     return 0;
