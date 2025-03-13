@@ -28,18 +28,18 @@
 int main(){
     int num,freq[1001]={0},count=0;
     scanf("%d",&num);
-    int arr[num];
+    int arr[num],freq_1[num];
     for(int i=0;i<num;i++){
         scanf("%d",&arr[i]);
     }
     for(int i=0;i<num;i++){
         if(freq[arr[i]]==0){
-            freq[count++]=arr[i];
+            freq_1[count++]=arr[i];
         }
         freq[arr[i]]++;
     }
     for(int i=0;i<count;i++){
-        printf("%d %d\n",arr[i],freq[arr[i]]);   
+        printf("%d %d\n",freq_1[i],freq[arr[i]]);   
     }
 }
 
