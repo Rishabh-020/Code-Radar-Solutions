@@ -34,7 +34,7 @@ int main(){
     }
     for(int i=0;i<num;i++){
         if(freq[arr[i]]==0){
-            count++;
+            freq[count++]=arr[i];
         }
         freq[arr[i]]++;
     }
