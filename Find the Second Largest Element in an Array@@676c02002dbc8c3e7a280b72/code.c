@@ -38,7 +38,7 @@ int main(){
     for(int i=0;i<num;i++){
         if(arr[i]>largest){
             sec_largest=largest;
-            largest=arr[i];}
+            largest=arr[i];}}
         // }else if(sec_largest<arr[i] && arr[i]!=largest)sec_largest=arr[i];
     // }if(sec_largest!=INT_MIN)
     printf("%d",sec_largest);
