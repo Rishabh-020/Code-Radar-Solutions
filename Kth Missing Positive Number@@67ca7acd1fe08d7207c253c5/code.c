@@ -5,6 +5,7 @@ int findKthMissing(int arr[],int n,int k){
             new_arr[j]=i+1;
             j++;
         }else{
+            i=0;
             find[p]=i+1;
             p++;
         }
