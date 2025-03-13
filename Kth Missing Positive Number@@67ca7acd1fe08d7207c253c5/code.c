@@ -9,7 +9,7 @@ int findKthMissing(int arr[],int n,int k){
             p++;
         }
     }
-    return find[k];
+    return find[k-1];
     // for(int i=0;i<j;i++){
         // if(new_arr[i]==0){
         //     find[k]=i;
