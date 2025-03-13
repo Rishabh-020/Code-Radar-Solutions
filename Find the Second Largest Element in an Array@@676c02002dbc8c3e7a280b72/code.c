@@ -30,6 +30,10 @@ int main(){
     scanf("%d",&num);
     int arr[num];
     int largest=INT_MIN,sec_largest=0;
+    if(num==1){
+        printf("-1");
+        return 0;
+    }
     for(int i=0;i<num;i++)scanf("%d",&arr[i]);
     for(int i=0;i<num;i++){
         if(arr[i]>largest){
