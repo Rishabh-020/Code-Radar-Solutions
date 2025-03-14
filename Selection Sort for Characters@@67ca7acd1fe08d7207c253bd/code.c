@@ -1,13 +1,15 @@
 #include<stdio.h>
 int selectionSort(char arr[],int num){
-    for(int i=0;i<num;i++){
-        for(int j=0;j<num-i-1;j++){
-            if(arr[j]>arr[j+1]){
-                int temp=arr[j];
-                arr[j]=arr[j+1];
-                arr[j+1]=temp;
+    for(int i=0;i<num-1;i++){
+        char min=i;
+        for(int j=i+1;j<num;j++){
+            if(arr[min]>arr[j]){
+                min=j;
             }
         }
+        char temp=arr[i];
+        arr[i]=arr[min];
+        arr[min]=temp;
     }
 }
 int printArray(char arr[],int num){
