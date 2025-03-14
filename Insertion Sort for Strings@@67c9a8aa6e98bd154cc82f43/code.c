@@ -6,9 +6,8 @@ void insertionSort(char arr[][100],int n){
         int prev=i-1;
         while(prev>=0 &&  strcmp(arr[prev],arr[current])>0){
             strcpy(arr[prev+1],arr[prev]);
-            prev--;
         }
-        strcpy(arr[prev+1],arr[current]);
+        strcpy(arr[prev],arr[current]);
     }
 }
 int printArray(char arr[][100],int n){
