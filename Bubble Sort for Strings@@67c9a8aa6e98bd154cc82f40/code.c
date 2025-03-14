@@ -3,7 +3,7 @@
 int now(char arr[]){
     for(int i=0;i<strlen(arr)-1;i++){
         for(int j=0;j<strlen(arr)-1-i;j++){
-            if(arr[j]>arr[j+1]){
+            if(strcmp(arr[j])>strcmp(arr[j+1])){
             char temp=arr[j];
             arr[j]=arr[j+1];
             arr[j+1]=temp;
