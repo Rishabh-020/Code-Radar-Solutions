@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<string.h>
-int selectionSort(char *arr[][100],int num){
+int selectionSort(char arr[][100],int num){
     char temp[100];
     for(int i=0;i<num-1;i++){
         int min=i;
@@ -13,7 +13,7 @@ int selectionSort(char *arr[][100],int num){
         strcpy(arr[min],temp);
     }
 }
-int printArray(char *arr[][100],int num){
+int printArray(char arr[][100],int num){
     selectionSort(arr,num);
     for(int i=0;i<num;i++){
         printf("%s",arr[i]);
