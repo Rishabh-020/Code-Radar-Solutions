@@ -5,7 +5,7 @@ void insertionSort(char arr[][100],int n){
     for(int i=1;i<n;i++){
         strcpy(temp,arr[i]);
         int prev=i-1;
-        while(prev>=0 &&  strcmp(arr[prev],arr[current])>0){
+        while(prev>=0 &&  strcmp(arr[prev],temp)>0){
             strcpy(arr[prev+1],arr[prev]);
             prev--;
         }
