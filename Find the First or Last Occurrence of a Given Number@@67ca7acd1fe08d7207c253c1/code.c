@@ -1,11 +1,13 @@
 int findOccurrence(int arr,int num,int target,char mode){
+    int find=-1;
     if(mode=='L'){
         for(int i=0;i<num;i++){
         if(arr[i]==target){
             find=i;
         }
     }
-    }if(mode=='F'){
+    }
+    if(mode=='F'){
         for(int i=0;i<num;i++){
             if(arr[i]==target){
                 return i;
