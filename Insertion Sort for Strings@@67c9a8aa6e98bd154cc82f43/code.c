@@ -1,13 +1,15 @@
 #include<stdio.h>
 #include<string.h>
 void insertionSort(char arr[][100],int n){
+    char temp[100];
     for(int i=1;i<n;i++){
-        int current=i;
+        strcpy(temp,arr[i]);
         int prev=i-1;
         while(prev>=0 &&  strcmp(arr[prev],arr[current])>0){
             strcpy(arr[prev+1],arr[prev]);
+            prev--;
         }
-        strcpy(arr[prev],arr[current]);
+        strcpy(arr[prev+1],temp);
     }
 }
 int printArray(char arr[][100],int n){
