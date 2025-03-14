@@ -6,7 +6,7 @@ int selectionSort(char arr[][100],int num){
         int min=i;
         for(int j=i+1;j<num;j++){
             if(strcmp(arr[min],arr[j])>0){
-                strcpy(arr[min],arr[j]);
+                min=j;
             }
         }strcpy(temp,arr[i]);
         strcpy(arr[i],arr[min]);
