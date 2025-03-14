@@ -1,4 +1,4 @@
-int findOccurrence(int arr,int num,int target,char mode){
+int findOccurrence(int arr[],int num,int target,char mode){
     int find=-1;
     if(mode=='L'){
         for(int i=0;i<num;i++){
