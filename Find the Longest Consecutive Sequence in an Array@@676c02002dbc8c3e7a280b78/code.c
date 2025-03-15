@@ -1,6 +1,7 @@
+
 #include<stdio.h>
 #include<stdlib.h>
-#define MAX 1000000
+#define MAX 100000
 int longest(int arr[],int n){
     int hash[MAX]={0};
     for(int i=0;i<n;i++)
