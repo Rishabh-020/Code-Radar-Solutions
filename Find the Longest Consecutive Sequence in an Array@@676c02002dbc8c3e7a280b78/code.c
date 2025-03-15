@@ -6,7 +6,7 @@ int longest(int arr[],int n){
     for(int i=0;i<n;i++)
     hash[arr[i]]=1;
     int max_len=0;
-    for(int i=0;i<;i++){
+    for(int i=0;i<n;i++){
         if(hash[arr[i]-1]==0){
             int num=arr[i];
             int count=0;
@@ -14,7 +14,8 @@ int longest(int arr[],int n){
             count++;
             num++;
             }
-            if(max_len < count)max_len=count;
+            if(max_len < count)
+            max_len=count;
         }
     }printf("%d 1",max_len);
 }
