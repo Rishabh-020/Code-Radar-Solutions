@@ -16,9 +16,9 @@ int main(){
         if(arr[i]==' ' || arr[i]=='\0'){
             int end=i-1;
             reverse(arr,start,end);
-            printf("%c",arr[i]);
-            // start=i+1;
-        }//start=i+1;
+            if(arr[i]==' ')printf(" ");
+            start=i+1;
+        }
     }
     return 0;
 }
