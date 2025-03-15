@@ -11,7 +11,7 @@ int main(){
     if(arr[strlen(arr)-1]=='\n'){
         arr[strlen(arr)-1]='\0';
     }
-    int start=0,len=strlen(arr)-1;
+    int start=0,len=strlen(arr);
     for(int i=start;i<len;i++){
         if(arr[i]==' ' || arr[i]=='\0'){
             int end=i-1;
