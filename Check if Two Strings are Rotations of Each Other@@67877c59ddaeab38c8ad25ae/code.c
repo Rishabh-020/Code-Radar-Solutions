@@ -3,7 +3,7 @@
 int main(){
     char str1[1000],str2[1000];
     fgets(str1,1000,stdin);
-    int len1=strlen(str1)-1,count=0;
+    int len1=strlen(str1),count=0;
     if(str1[len1]=='\n'){
         str1[len1]='\0';
     }
