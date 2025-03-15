@@ -3,14 +3,10 @@ int insertionSort(int *arr,int num){
     for(int i=1;i<num;i++){
         int current=i;
         int prev=i-1;
-        while(prev>=0 && arr[current]>arr[prev]){
+        while(prev>=0 && arr[current]<arr[prev]){
             arr[prev+1]=arr[prev];
             prev--;
-        }
-        arr[prev+1]=arr[current];
-        int temp=arr[i];
-    arr[i]=arr[current];
-    arr[current]=arr[i];
+        }arr[prev+1]=arr[current];
     }
 }
 int printArray(int *arr,int n){
