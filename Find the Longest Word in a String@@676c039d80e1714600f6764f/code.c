@@ -17,8 +17,8 @@ int longest_word(char str[]){
         }
     }
     for(int i=start_index;i<max_len+start_index;i++){
-        printf("%c n",str[i]);
-    }
+        printf("%c",str[i]);
+    }printf("\n nice");
 }
 int main(){
     char str[1000];
