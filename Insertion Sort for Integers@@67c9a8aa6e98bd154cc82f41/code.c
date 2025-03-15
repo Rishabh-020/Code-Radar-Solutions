@@ -6,7 +6,7 @@ int insertionSort(int *arr,int num){
         while(prev>=0 && arr[current]<arr[prev]){
             arr[prev+1]=arr[prev];
             prev--;
-        }arr[prev+1]=arr[current];
+        }arr[prev+1]=current;
     }
 }
 int printArray(int *arr,int n){
