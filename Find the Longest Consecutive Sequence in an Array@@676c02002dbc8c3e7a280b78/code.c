@@ -21,6 +21,5 @@ int main(){
     int arr[num];
     for(int i=0;i<num;i++)scanf("%d",&arr[i]);
     longest(arr,num);
-    
     return 0;
 }
