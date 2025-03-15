@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<string.h>
+#include<stdlib.h>
 int longest(int arr[],int num){
     int hash[1000]={0},max_len=0,count=0;
     for(int i=0;i<num;i++)hash[arr[i]]=1;
