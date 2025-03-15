@@ -4,13 +4,13 @@ int main(){
     char str1[1000],str2[1000];
     fgets(str1,1000,stdin);
     int len1=strlen(str1),count=0;
-    if(str1[len1]=='\n'){
-        str1[len1]='\0';
+    if(str1[len1-1]=='\n'){
+        str1[len1-1]='\0';
     }
     fgets(str2,1000,stdin);
-    int len2=strlen(str2)-1;
-    if(str2[len2]=='\n'){
-        str2[len2]='\0';
+    int len2=strlen(str2);
+    if(str2[len2-1]=='\n'){
+        str2[len2-1]='\0';
     }
     for(int i=0;i<len1;i++){
         if((i<=0 && str1[i]==str2[i+1]) ||
