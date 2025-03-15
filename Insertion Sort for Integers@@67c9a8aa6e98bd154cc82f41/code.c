@@ -1,5 +1,5 @@
 #include<stdio.h>
-int insertionSort(int *arr,int n){
+int insertionSort(int *arr,int num){
     for(int i=1;i<num;i++){
         int current=i;
         int prev=i-1;
