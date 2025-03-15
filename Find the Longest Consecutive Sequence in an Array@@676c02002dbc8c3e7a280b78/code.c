@@ -1,17 +1,18 @@
 #include<stdio.h>
 #include<stdlib.h>
 #define MAX 1000000
-int longest(int arr[],int num){
+int longest(int arr[],int n){
     int hash[MAX]={0};
-    for(int i=0;i<num;i++)hash[arr[i]]=1;
+    for(int i=0;i<n;i++)
+    hash[arr[i]]=1;
     int max_len=0;
-    for(int i=0;i<num;i++){
+    for(int i=0;i<;i++){
         if(hash[arr[i]-1]==0){
-            int n=arr[i];
+            int num=arr[i];
             int count=0;
-            while(hash[n]){
+            while(hash[num]){
             count++;
-            n++;
+            num++;
             }
             if(max_len < count)max_len=count;
         }
