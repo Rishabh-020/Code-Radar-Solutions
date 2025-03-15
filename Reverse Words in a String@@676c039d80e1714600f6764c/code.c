@@ -13,7 +13,7 @@ int main(){
     }
     int start=0,len=strlen(arr)-1;
     for(int i=start;i<len;i++){
-        if(arr[i]==" " || arr[i]=='\0'){
+        if(arr[i]==' ' || arr[i]=='\0'){
             end=i-1;
             reverse(arr,start,end);
             start=i+1;
