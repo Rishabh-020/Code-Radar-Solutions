@@ -17,8 +17,8 @@ int main(){
             int end=i-1;
             reverse(arr,start,end);
             printf("%c",arr[i]);
-            start=i+1;
-        }
+            // start=i+1;
+        }start=i+1;
     }
     return 0;
 }
