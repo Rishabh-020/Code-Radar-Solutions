@@ -12,6 +12,9 @@ int main(){
     if(str2[len2-1]=='\n'){
         str2[len2-1]='\0';
     }
+    if(len1!=len2){
+        printf("No");return 0;
+    }
     for(int i=0;i<len1;i++){
         if((i>=0 && str1[i]==str2[i+1]) ||
            (str1[i]==str2[i-1] && i>0) ||
