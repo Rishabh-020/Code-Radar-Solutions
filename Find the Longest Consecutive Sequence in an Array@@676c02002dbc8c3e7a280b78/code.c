@@ -15,7 +15,7 @@ int longest(int arr[],int n){
             count++;
             num++;
             }
-            if(max_len < count)
+            if(count>max_len)
             max_len=count;
         }
     }printf("%d1",max_len);
