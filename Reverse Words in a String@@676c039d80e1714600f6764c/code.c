@@ -16,7 +16,7 @@ int main(){
         if(arr[i]==' ' || arr[i]=='\0'){
             int end=i-1;
             reverse(arr,start,end);
-            start=i+1;
+            
         }
     }
     return 0;
