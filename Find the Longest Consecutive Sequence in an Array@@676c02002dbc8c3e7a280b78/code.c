@@ -1,25 +1,29 @@
-#include<stdio.h>
-#include<stdlib.h>
-int longest(int arr[],int num){
-    int hash[100000]={0},max_len=0,count=0;
-    for(int i=0;i<num;i++)hash[arr[i]]=1;
-    for(int i=0;i<num;i++){
-        if(hash[arr[i]-1]==0){
-            int n=arr[i];
-            count=0;
-            while(hash[n]){
-            count++;
-            n++;
+#include <stdio.h>
+#include <stdlib.h>
+#define MAX 100000
+int longestConsecutive(int arr[], int n) {
+    if (n == 0) return 0;
+    int hash[MAX] = {0};
+    for (int i = 0; i < n; i++)
+        hash[arr[i]] = 1;
+    int maxLength = 0;
+    for (int i = 0; i < n; i++) {
+        if (hash[arr[i] - 1] == 0) {
+            int num = arr[i];
+            int count = 0;
+            while (hash[num]) {
+                count++;
+                num++;
             }
-            if(max_len < count)max_len=count;
+            if (count > maxLength)
+                maxLength = count;
         }
-    }printf("%d 1",max_len);
+    }
+    return maxLength;
 }
-int main(){
-    int num;
-    scanf("%d",&num);
-    int arr[num];
-    for(int i=0;i<num;i++)scanf("%d",&arr[i]);
-    longest(arr,num);
+int main() {
+    int arr[] = {100, 4, 200, 1, 3, 2, 5, 6};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    printf("Longest Consecutive Sequence Length: %d\n", longestConsecutive(arr, n));
     return 0;
 }
