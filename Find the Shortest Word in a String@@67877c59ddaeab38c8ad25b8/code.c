@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<string.h>
 int shortest_word(char arr[]){
     int len=strlen(arr);
     int short_len=len,find_index=0,small_index=0,length=0;
