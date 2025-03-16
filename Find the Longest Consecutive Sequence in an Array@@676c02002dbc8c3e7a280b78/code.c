@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 int longest(int arr[],int num){
+    if(n==0)return 0;
     int *hash = (int *)calloc(10000, sizeof(int)),max_len=0;
     for(int i=0;i<num;i++)
     hash[arr[i]]=1;
