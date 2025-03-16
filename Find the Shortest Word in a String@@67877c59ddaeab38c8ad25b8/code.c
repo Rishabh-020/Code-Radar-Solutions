@@ -6,9 +6,10 @@ int shortest_word(char arr[]){
     for(int i=0;i<=len;i++){
         if(arr[i]==' '|| arr[i]=='\0'){
             if(length<short_len){
-                find_index=i+1;
+                small_index=find_index;
                 short_len=length;
-            }
+            }find_index=i+1;
+            length=0;
         }else{
             length++;
         }
