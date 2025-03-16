@@ -6,9 +6,9 @@ int longest(int arr[],int num){
     hash[arr[i]]=1;
     for(int i=0;i<num;i++){
         if(hash[arr[i]-1]==0){
-            int initial=hash[arr[i]];
+            int initial=arrr[i];
             int count=1;
-            while(hash[arr[i]]){
+            while(hash[initial+1]==1){
                 count++;
                 initial++;
             }
