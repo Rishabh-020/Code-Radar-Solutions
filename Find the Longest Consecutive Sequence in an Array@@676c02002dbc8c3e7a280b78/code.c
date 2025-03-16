@@ -16,7 +16,6 @@ int longest(int arr[],int num){
             max_len=count;
         }
     }
-    free(hash);
     printf("%d",max_len);
     return 0;
 }
