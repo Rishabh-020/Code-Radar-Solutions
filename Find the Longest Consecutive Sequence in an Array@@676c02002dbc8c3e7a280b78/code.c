@@ -1,8 +1,10 @@
+
 #include<stdio.h>
 #include<stdlib.h>
+#define MAX 10000
 int longest(int arr[],int num){
-    if(num==0)return 0;
-    int *hash = (int *)calloc(10000, sizeof(int)),max_len=0;
+    int hash[MAX]={0};  
+    int max_len=0;
     for(int i=0;i<num;i++)
     hash[arr[i]]=1;
     for(int i=0;i<num;i++){
@@ -28,3 +30,5 @@ int main(){
     longest(arr,num);
     return 0;
 }
+
+
