@@ -1,7 +1,7 @@
 
 #include<stdio.h>
 #include<stdlib.h>
-#define MAX 1000
+#define MAX 1001
 int longest(int arr[],int num){
     int hash[MAX]={0};  
     int max_len=0;
