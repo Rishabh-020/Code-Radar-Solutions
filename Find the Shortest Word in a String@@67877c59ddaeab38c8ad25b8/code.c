@@ -5,7 +5,7 @@ int shortest_word(char arr[]){
     int short_len=len,find_index=0,small_index=0,length=0;
     for(int i=0;i<=len;i++){
         if(arr[i]==' '|| arr[i]=='\0'){
-            if(length<short_len){
+            if(length<short_len && length>0){
                 small_index=find_index;
                 short_len=length;
             }find_index=i+1;
