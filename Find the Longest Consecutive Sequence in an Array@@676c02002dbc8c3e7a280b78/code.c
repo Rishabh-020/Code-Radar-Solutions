@@ -1,7 +1,5 @@
-
 #include<stdio.h>
 #include<stdlib.h>
-#define MAX 100000
 int longest(int arr[],int num){
     int hash[10000]={0},max_len=0;
     for(int i=0;i<num;i++)
@@ -10,7 +8,7 @@ int longest(int arr[],int num){
         if(hash[arr[i]-1]==0){
             int initial=hash[arr[i]];
             int count=1;
-            while(hash[i]){
+            while(hash[arr[i]]){
                 count++;
                 initial++;
             }
