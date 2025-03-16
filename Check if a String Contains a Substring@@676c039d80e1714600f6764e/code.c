@@ -8,7 +8,7 @@ int main(){
     char find[1000];
     scanf("%s",&find);
     if(strstr(str,find)!=NULL){
-        printf("yes");
+        printf("Yes");
     }else printf("no");
     return 0;
 }
