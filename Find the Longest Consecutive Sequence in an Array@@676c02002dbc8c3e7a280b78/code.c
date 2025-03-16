@@ -12,7 +12,7 @@ int longest(int arr[],int num){
             int count=1;
             while(hash[i]){
                 count++;
-                arr[i]++;
+                initial++;
             }
             if(count>max_len)
             max_len=count;
