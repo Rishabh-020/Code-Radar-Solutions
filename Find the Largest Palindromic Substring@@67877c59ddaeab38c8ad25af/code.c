@@ -5,11 +5,9 @@ int long_pal(char str[],int len){
         int left=len/2,right=len/2;
     }else{
         int left=(len+1)/2,right=(len+1)/2;
-        while((left+right-1)){
-            if(str[left]==str[right]){
-                left--;
-                right++;
-            }
+        while((left+right-1)==len && str[left]==str[right]){
+            left--;
+            right++;
         }
         for(int i=left;i<=right;i++){
         printf("%c",str[i]);
