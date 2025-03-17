@@ -13,13 +13,12 @@ int long_pal(char str[],int len){
         printf("%c",str[i]);
     }
     }
-    
 }
 int main(){
     char str[1000];
     fgets(str,1000,stdin);
     int len=strlen(str)-1;
-    if(str[str]=='\n')str[str]='\0';
+    if(str[len]=='\n')str[len]='\0';
     long_pal(str,len);
     return 0;
 }
