@@ -1,17 +1,17 @@
 #include<stdio.h>
 #include<string.h>
 int long_pal(char str[],int len){
-    if(len%2==0){
-        int left=len/2,right=len/2;
-    }else{
-        int left=(len+1)/2,right=(len+1)/2;
-        while((left+right-1)==len && str[left]==str[right]){
-            left--;
-            right++;
-        }
-        for(int i=left;i<=right;i++){
-        printf("%c",str[i]);
+    int start=1;end=0;
+    for(int i=0;i<len;i++){
+        int left=i,right=i;
+        while(left>0 && right<len && left[left]==str[right]){
+            start=left;
+            end=right;
+        }left--;
+        right++;
     }
+    for(int i=start;i<start+end;i++){
+        printf("%c",str[i]);
     }
 }
 int main(){
