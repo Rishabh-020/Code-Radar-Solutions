@@ -6,7 +6,7 @@ int long_pal(char str[],int len){
         int left=i,right=i;
         while(left>0 && right<len && str[left]==str[right]){
             start=left;
-            end=right;
+            end=left-right+1;
         }left--;
         right++;
     }
