@@ -21,8 +21,8 @@ void long_pal(char str[],int len){
         }
     }
     for(int i=start;i<start+end;i++){
-        printf("%c 1",str[i]);
-    }
+        printf("%c",str[i]);
+    }printf("4");
 }
 int main(){
     char str[1000];
