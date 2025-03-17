@@ -11,7 +11,7 @@ void long_pal(char str[],int len){
             }left--;
             right++;
         }
-        int left=i,right=i+1;
+        left=i,right=i+1;
         while(left>=0 && right<len && str[left]==str[right]){
             if(right-left+1>end){
                 start=left;
