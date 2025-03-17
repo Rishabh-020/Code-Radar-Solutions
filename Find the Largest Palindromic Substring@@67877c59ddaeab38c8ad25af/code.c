@@ -18,7 +18,7 @@ int main(){
     char str[1000];
     fgets(str,1000,stdin);
     int len=strlen(str);
-    if(str[len]=='\n')str[len]='\0';
+    if(str[len-1]=='\n')str[len-1]='\0';
     long_pal(str,len);
     return 0;
 }
