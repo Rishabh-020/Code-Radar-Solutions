@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<string.h>
-int long_pal(char str[],int len){
+char long_pal(char str[],int len){
     int start=0,end=1;
     for(int i=0;i<len;i++){
         int left=i,right=i;
@@ -19,8 +19,11 @@ int long_pal(char str[],int len){
 int main(){
     char str[1000];
     fgets(str,1000,stdin);
-    int len=strlen(str)-1;
-    if(str[len]=='\n')str[len]='\0';
+    int len=strlen(str);
+    if(str[len-1]=='\n'){
+        str[len-1]='\0';
+        len--;
+    }
     long_pal(str,len);
     return 0;
 }
