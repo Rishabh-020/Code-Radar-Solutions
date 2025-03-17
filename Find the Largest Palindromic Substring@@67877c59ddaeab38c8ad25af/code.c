@@ -11,9 +11,17 @@ void long_pal(char str[],int len){
             }left--;
             right++;
         }
+        int left=i,right=i+1;
+        while(left>=0 && right<len && str[left]==str[right]){
+            if(right-left+1>end){
+                start=left;
+                end=right+1-left;
+            }left--;
+            right++;
+        }
     }
     for(int i=start;i<start+end;i++){
-        printf("%c",str[i]);
+        printf("%c 1",str[i]);
     }
 }
 int main(){
