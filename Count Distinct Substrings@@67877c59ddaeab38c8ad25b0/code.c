@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<string.h>
 int long_pal(char str[],int len){
-    int start=1;end=0;
+    int start=1,end=0;
     for(int i=0;i<len;i++){
         int left=i,right=i;
         while(left>0 && right<len && left[left]==str[right]){
