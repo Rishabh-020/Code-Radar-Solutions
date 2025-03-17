@@ -4,10 +4,10 @@ int long_pal(char str[],int len){
     int start=1,end=0;
     for(int i=0;i<len;i++){
         int left=i,right=i;
-        while(left>0 && right<len && str[left]==str[right]){
+        while(left>=0 && right<len && str[left]==str[right]){
             if(right-left+1>len){
                 start=left;
-                end=-left+right+1;
+                end=right+1-left;
             }
         }left--;
         right++;
