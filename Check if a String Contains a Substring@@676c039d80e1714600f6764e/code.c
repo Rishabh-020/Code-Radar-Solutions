@@ -8,6 +8,6 @@ int main(){
     char find[1000];
     scanf("%s",&find);
     if (strstr(str,find)!=NULL) printf("Yes");
-    else printf("no");
+    else printf("No");
     return 0;
 }
