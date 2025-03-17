@@ -10,7 +10,7 @@ int long_pal(char str[],int len){
         }left--;
         right++;
     }
-    for(int i=start;i<start+end;i++){
+    for(int i=start;i<end;i++){
         printf("%c",str[i]);
     }
 }
