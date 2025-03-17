@@ -8,9 +8,9 @@ void long_pal(char str[],int len){
             if(right-left+1>end){
                 start=left;
                 end=right+1-left;
-            }
-        }left--;
-        right++;
+            }left--;
+            right++;
+        }
     }
     for(int i=start;i<start+end;i++){
         printf("%c",str[i]);
