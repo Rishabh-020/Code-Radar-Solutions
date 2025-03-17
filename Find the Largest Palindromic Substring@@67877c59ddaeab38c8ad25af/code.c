@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<string.h>
-char long_pal(char str[],int len){
+void long_pal(char str[],int len){
     int start=0,end=1;
     for(int i=0;i<len;i++){
         int left=i,right=i;
