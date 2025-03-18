@@ -1,6 +1,6 @@
 int findKthMissing(int arr[],int n,int k){
     int find[k],j=0,new1[n];
-    for(int i=0;i<arr[n-1];){
+    for(int i=0;i<arr[n-1];i++){
         if(arr[i]==i+1){
             new1[i]=arr[i];
         }else{
