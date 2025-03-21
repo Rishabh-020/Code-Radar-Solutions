@@ -31,8 +31,8 @@ int main(){
     for(int i=0;i<num-1;i++){
         int now=0;
         for(int j=i+1;j<num;j++){
-            if(arr[i]>arr[j])now=1;
-        }if(now==1)printf("%d ",arr[i]);
+            if(arr[i]<arr[j])now=1;
+        }if(now==0)printf("%d ",arr[i]);
     }printf("%d",arr[num-1]);
     return 0;
 }
