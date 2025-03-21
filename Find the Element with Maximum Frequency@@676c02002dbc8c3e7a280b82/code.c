@@ -28,7 +28,7 @@
 int main(){
     int num,count_freq=0,max=0;
     scanf("%d",&num);
-    int arr[num],freq_arr[10001]={0};
+    int arr[num],freq_arr[1001]={0};
     for(int i=0;i<num;i++){
         scanf("%d",&arr[i]);
         freq_arr[arr[i]]++;
