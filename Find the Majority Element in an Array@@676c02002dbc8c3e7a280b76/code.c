@@ -37,7 +37,7 @@ int main(){
         freq[arr[i]]++;
     }
     for(int i=0;i<1001;i++){
-        if(freq[i]>max && freq[i]>=(num/2)){
+        if(freq[i]>max && freq[i]>(num/2)){
             max=i;
         }
     }
