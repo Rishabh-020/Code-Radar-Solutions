@@ -37,7 +37,8 @@ int selection_sort(int arr[],int num){
     }
 }
 int print_array(int arr[],int num){
-
+    int num1=arr[num-2],num2=arr[num-1];
+    printf("%d %d",num1,num2);
 }
 int main(){
     int num;
