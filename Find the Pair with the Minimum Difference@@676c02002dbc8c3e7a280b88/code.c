@@ -27,7 +27,7 @@
 int selection_sort(int arr[],int num){
     for(int i=0;i<num-1;i++){
         int find=i;
-        for(int j=0;j<num;j++){
+        for(int j=i+1;j<num;j++){
             if(arr[j]<find){
                 find=arr[j];
             }
