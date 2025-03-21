@@ -44,7 +44,7 @@ int main(){
     scanf("%d",&num);
     if(num==1){
         printf("%d",-1);
-        break;
+        return 0;
     }
     
     int arr[num];
