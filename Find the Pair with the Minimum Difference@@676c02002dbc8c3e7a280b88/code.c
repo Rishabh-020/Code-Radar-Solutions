@@ -34,7 +34,7 @@ int main(){
     for(int i=0;i<num;i++){
         scanf("%d ",&arr[i]);
     }
-    // absolute_diff(arr,num);
+    absolute_diff(arr,num);
     return 0;
 }
 
