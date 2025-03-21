@@ -28,7 +28,7 @@ int longest_word(char str[]){
             if(word_length>0 && max_lenght<word_length){
                 max_start=max_lenght;
                 max_end=word_length;
-            }max_start=i+1;
+            }max_lenght=i+1;
             word_length=0;
         }else{
             word_length++;
