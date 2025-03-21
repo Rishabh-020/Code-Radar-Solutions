@@ -24,7 +24,7 @@ int longest_word(char arr[]){
     int len=strlen(arr);
     int start=0,end=1,max=0,word_len=0;
     for(int i=start;i<len;i++){
-        if(arr[i]==' '|| arr[i]='\0'){
+        if(arr[i]==' '|| arr[i]=='\0'){
             if(word_len>0 && max<word_len){
                 end=i;
                 start=0;   
@@ -34,6 +34,7 @@ int longest_word(char arr[]){
             word_len++;
         }
     }
+    for(int i=start;i<start+end;i++){printf("%c",arr[i]);}
 }
 int main(){
     char str[1000];
