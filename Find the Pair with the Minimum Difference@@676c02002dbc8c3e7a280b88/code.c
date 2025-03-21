@@ -35,7 +35,7 @@ int selection_sort(int arr[],int num){
         arr[i]=arr[find];
         arr[find]=temp;
     }
-    printf("%d",arr[num-1]-arr[num-2]);
+    printf("%d %d",arr[num-2],arr[num-1]);
 }
 int main(){
     int num;
