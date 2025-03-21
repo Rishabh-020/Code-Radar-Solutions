@@ -26,15 +26,15 @@ int longest_word(char arr[]){
     for(int i=start;i<len;i++){
         if(arr[i]==' '|| arr[i]=='\0'){
             if(word_len>0 && max<word_len){
-                end=word_len;
-                start=0;   
+                max=word_len;
+                end=start;   
             }start=i+1;
             word_len=0;
         }else{
             word_len++;
         }
     }
-    for(int i=start;i<start+end;i++){printf("%c",arr[i]);}
+    for(int i=end;i<max+end;i++){printf("%c",arr[i]);}
 }
 int main(){
     char str[1000];
