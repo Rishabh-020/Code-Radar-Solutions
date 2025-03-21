@@ -28,7 +28,7 @@ int shortest_word(char str[]){
                 min_start=find_index;
                 min_word=word_len;
             }find_index=i+1;
-            word_len=0
+            word_len=0;
         }else word_len++
     }
     for(int i=min_start;i<min_start+min_word;i++){
