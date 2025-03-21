@@ -28,8 +28,15 @@ int selection_sort(int arr[],int num){
     for(int i=0;i<num-1;i++){
         int find=i;
         for(int j=0;j<num;j++){
-            
-        }
+            if(arr[j]<find){
+                find=arr[j];
+            }
+        }int temp=arr[i];
+        arr[i]=find;
+        find=temp;
+    }
+    for(int i=0;i<num;i++){
+        printf("%d ",arr[i]);
     }
 }
 int main(){
