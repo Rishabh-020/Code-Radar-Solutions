@@ -36,7 +36,7 @@ int selection_sort(int arr[],int num){
         arr[find]=temp;
     }
 }
-int print_array(int arr,int num){
+int print_array(int arr[],int num){
 
 }
 int main(){
