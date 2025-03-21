@@ -35,16 +35,24 @@ int selection_sort(int arr[],int num){
         arr[i]=arr[find];
         arr[find]=temp;
     }
-    printf("%d %d",arr[num-2],arr[num-1]);
+}
+print_array(int arr,int num){
+
 }
 int main(){
     int num;
     scanf("%d",&num);
+    if(num==1){
+        printf("%d",-1);
+        break;
+    }
+    
     int arr[num];
     for(int i=0;i<num;i++){
         scanf("%d ",&arr[i]);
     }
     selection_sort(arr,num);
+    print_array(arr,num);
     // absolute_diff(arr,num);
     return 0;
 }
