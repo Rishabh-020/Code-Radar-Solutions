@@ -34,9 +34,9 @@ int main(){
         freq_arr[arr[i]]++;
     }
     for(int i=0;i<1001;i++){
-        if(freq_arr[arr[i]]>max){
-            max=freq_arr[arr[i]];
-            count_freq=arr[i];
+        if(freq_arr[i]>max){
+            max=freq_arr[i];
+            count_freq=i;
         }
     }
     printf("%d",count_freq);
