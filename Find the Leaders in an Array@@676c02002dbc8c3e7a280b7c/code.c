@@ -30,8 +30,9 @@ int main(){
     for(int i=0;i<num;i++)scanf("%d",&arr[i]);
     for(int i=0;i<num-1;i++){
         int now=0;
-        if(arr[i]>arr[i+1])now=1;
-        if(now==1)printf("%d ",arr[i]);
+        for(int j=i+1;j<num;j++){
+            if(arr[i]>arr[j])now=1;
+        }if(now==1)printf("%d",arr[i]);
     }printf("%d",arr[num-1]);
     return 0;
 }
