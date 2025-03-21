@@ -22,13 +22,14 @@
 // }
 int longest_word(char str[]){
     int len=strlen(str);
-    int max_start=0,max_end=0,max_lenght=0,word_length=0;
+    int max_start=0,max_end=0,find_index=0
+    ,word_length=0;
     for(int i=0;i<len;i++){
         if(str[i]==' '||str[i]=='\0'){
-            if(word_length>0 && max_lenght<word_length){
-                max_start=max_lenght;
+            if(word_length>0 && find_index<word_length){
+                max_start=find_index;
                 max_end=word_length;
-            }max_lenght=i+1;
+            }find_index=i+1;
             word_length=0;
         }else{
             word_length++;
