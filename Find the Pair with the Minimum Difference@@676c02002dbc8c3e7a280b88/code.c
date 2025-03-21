@@ -29,15 +29,13 @@ int selection_sort(int arr[],int num){
         int find=i;
         for(int j=i+1;j<num;j++){
             if(arr[j]<find){
-                find=arr[j];
+                find=j;
             }
         }int temp=arr[i];
-        arr[i]=find;
-        find=temp;
+        arr[i]=arr[find];
+        arr[find]=temp;
     }
-    for(int i=0;i<num;i++){
-        printf("%d ",arr[i]);
-    }
+    printf("%d",arr[num-1]-arr[num-2]);
 }
 int main(){
     int num;
