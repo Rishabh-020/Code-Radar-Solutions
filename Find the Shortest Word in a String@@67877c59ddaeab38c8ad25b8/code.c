@@ -29,7 +29,7 @@ int shortest_word(char str[]){
                 min_word=word_len;
             }find_index=i+1;
             word_len=0;
-        }else word_len++
+        }else word_len++;
     }
     for(int i=min_start;i<min_start+min_word;i++){
         printf("%c",str[i]);
