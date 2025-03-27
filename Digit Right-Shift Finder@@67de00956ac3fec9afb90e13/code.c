@@ -1,6 +1,6 @@
 int shiftedNumber(int num){
-    int find=num1,len=1;
-    while(num>0){
+    int num1=num,len=1;
+    while(num1>0){
         int N=num1%10;
         len++;
         num1/=10;
