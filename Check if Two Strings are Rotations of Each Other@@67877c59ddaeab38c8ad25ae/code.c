@@ -16,6 +16,6 @@ int main(){
     strcpy(temp,str1);
     strcat(temp,str1); 
     if(strstr(temp,str2)!=NULL) printf("Yes");
-    else printf("no");
+    else printf("No");
     return 0;
 }
