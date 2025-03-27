@@ -10,11 +10,11 @@ void deflateBalloons(int arr[],int num){
             }
         }
     }
+    printf("%d\n",num); 
     for(int i=0;i<num;i++){
         if(arr[i]==0)
         continue;
         int find=arr[i];
-        printf("%d\n",num);
         for(int j=0;j<num;j++){
             if(arr[j]!=0)
             arr[j]=arr[j]-find;
