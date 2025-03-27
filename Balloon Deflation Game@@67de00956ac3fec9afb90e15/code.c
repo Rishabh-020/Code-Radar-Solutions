@@ -17,7 +17,7 @@ int deflateBalloons(int arr[],int num){
             count++;
             arr[j]-=find;
         }if(count!=0 && arr[num-1]!=0){
-            printf("%d",count);
+            printf("%d\n",count);
         }else
         return 0;
     }
