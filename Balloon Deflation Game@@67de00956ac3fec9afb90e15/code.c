@@ -14,13 +14,15 @@ void deflateBalloons(int arr[],int num){
         if(arr[i]==0)
         continue;
         int find=arr[i];
+        printf("%d\n",num);
         for(int j=0;j<num;j++){
             if(arr[j]!=0)
-            count++;
             arr[j]=arr[j]-find;
-        }if(count!=0 && arr[num-1]!=0){
-            printf("%d\n",count);
         }
         count=0;
+        for(int j=0;j<num;j++){
+            if(arr[j]>0)count++;
+        }
+        if(count>0)printf("%d\n",count);
     }
 }
