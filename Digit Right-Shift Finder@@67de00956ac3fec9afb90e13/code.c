@@ -1,5 +1,5 @@
 int digitRightShift(int num){
-    int num1=num,len=1;
+    int num1=num,len=0;
     while(num1>0){
         int N=num1%10;
         len++;
