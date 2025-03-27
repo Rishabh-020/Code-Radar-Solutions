@@ -9,6 +9,6 @@ int digitRightShift(int num){
     sprintf(str,"%d",num);
     printf("%c",str[len-1]);
     for(int i=0;i<len-1;i++){
-        printf("%c",str[i]);
+        printf("%c\n",str[i]);
     }
 }
