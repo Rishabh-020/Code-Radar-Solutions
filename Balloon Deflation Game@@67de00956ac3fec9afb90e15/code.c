@@ -1,5 +1,5 @@
 #include<stdio.h>
-int deflateBallons(int air[],int num){
+int deflateBallons(int arr[],int num){
     for(int i=0;i<num;i++){
         for(int j=i+1;j<num;j++){
             if(arr[i]>arr[j]){
