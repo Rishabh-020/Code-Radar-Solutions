@@ -22,4 +22,5 @@ int deflateBalloons(int arr[],int num){
         else
         return 0;
     }
+    count=0;
 }
