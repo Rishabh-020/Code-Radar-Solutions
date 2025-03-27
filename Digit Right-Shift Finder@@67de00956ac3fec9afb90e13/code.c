@@ -8,7 +8,7 @@ int digitRightShift(int num){
     char str[len];
     sprintf(str,"%d",num);
     printf("%c",str[len-1]);
-    for(int i=1;i<len-1;i++){
+    for(int i=0;i<len-1;i++){
         printf("%c",str[i]);
     }
 }
