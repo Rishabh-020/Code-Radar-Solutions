@@ -11,6 +11,8 @@ int deflateBalloons(int arr[],int num){
         }
     }
     for(int i=0;i<num;i++){
+        if(arr[i]==0)
+        continue;
         int find=arr[i];
         for(int j=0;j<num;j++){
             if(arr[j]!=0)
