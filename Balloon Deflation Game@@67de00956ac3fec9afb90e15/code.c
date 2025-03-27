@@ -21,6 +21,6 @@ int deflateBalloons(int arr[],int num){
         printf("%d\n",count);
         else
         return 0;
+        count=0;
     }
-    count=0;
 }
