@@ -33,7 +33,7 @@ int main(){
             if(arr[i]>arr[j]){
                 count++;
             }
-        }if(count==num-i)printf("%d",arr[i]);
+        }if(count==(num-i-1))printf("%d",arr[i]);
         count=0;
     }
     return 0;
