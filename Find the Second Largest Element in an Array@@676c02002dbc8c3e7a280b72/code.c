@@ -31,7 +31,7 @@ int main(){
         secound=first;
         first=arr[i];
        }else if(secound<arr[i] && arr[i]<first){
-        secound=arr[i]
+        secound=arr[i];
        }
     }
     if(secound!=INT_MIN)
