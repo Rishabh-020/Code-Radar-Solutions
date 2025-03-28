@@ -14,7 +14,7 @@ int digitRightShift(int num){
     // printf("\n");
     char new_arr[len];
     new_arr[0]=str[len-2];
-    printf("%c\n",new_arr[0]);
+    // printf("%c\n",new_arr[0]);
     for(int i=0;i<len-2;i++)new_arr[i+1]=str[i];
     return atoi(new_arr);
 }
