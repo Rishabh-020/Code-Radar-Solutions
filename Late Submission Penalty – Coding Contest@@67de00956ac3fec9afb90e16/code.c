@@ -11,6 +11,6 @@ int calculatePenalty(int subday,int submonth,int subyear,int dueday,int duemonth
     }else if(subday>dueday){
         return daily;
     }else{
-        return -1;
+        return 0;
     }
 }
