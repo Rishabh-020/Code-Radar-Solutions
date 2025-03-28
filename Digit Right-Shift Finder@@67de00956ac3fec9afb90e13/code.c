@@ -1,3 +1,4 @@
+#include<stdlib.h>
 int digitRightShift(int num){
     int num1=num,len=1;
     while(num1>0){
