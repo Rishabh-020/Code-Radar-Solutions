@@ -25,16 +25,20 @@ int main(){
     scanf("%d",&num);
     int arr[num];
     for(int i=0;i<num;i++)scanf("%d",&arr[i]);
-    int first=INT_MIN,secound=INT_MIN;
+    int first=INT_MIN,secound=0;
     for(int i=0;i<num;i++){
-        for(int j=i+1;j<num;j++){
-            if(arr[i]>arr[j]){
-                secound=first;
-                first=arr[i];
-            }
-        }
+       if(arr[i]>first){
+        secound=first;
+        first=arr[i];
+       }else if(secound<arr[i] && arr[i]<first){
+        secound=arr[i]
+       }
     }
+    if(secound!=INT_MIN)
     printf("%d",secound);
+    else{
+        pritnf("-1");
+    }
     return 0;
 }
 
