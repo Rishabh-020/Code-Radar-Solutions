@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 int caesarCipher(char message[],int shift,char encrypted[]){
     for(int i=0;i!='\0';i++){
         if(message[i]!=' '){
