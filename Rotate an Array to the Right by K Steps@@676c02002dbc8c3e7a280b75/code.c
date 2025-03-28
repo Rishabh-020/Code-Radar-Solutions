@@ -25,7 +25,7 @@ int main(){
     int index;
     scanf("%d",&index);
     for(int i=num-index;i<num;i++)printf("%d ",arr[i]);
-    for(int i=0;i<=index;i++)printf("%d ",arr[i]);
+    for(int i=0;i<num-index;i++)printf("%d ",arr[i]);
 }
 
 
