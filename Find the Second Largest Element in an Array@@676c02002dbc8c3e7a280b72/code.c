@@ -37,7 +37,7 @@ int main(){
     if(secound!=INT_MIN)
     printf("%d",secound);
     else{
-        pritnf("-1");
+        printf("-1");
     }
     return 0;
 }
