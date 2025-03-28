@@ -5,5 +5,5 @@ int caesarCipher(char message[],int shift,char encrypted[]){
             encrypted[i]=(message[i]+shift)%26;
         }
     }
-    return alio(encrypted);
+    return aloi(encrypted);
 }
