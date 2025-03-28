@@ -30,7 +30,7 @@ int main(){
     for(int i=0;i<num;i++)scanf("%d",&arr[i]);
     for(int i=0;i<num;i++){
         for(int j=i+1;j<num;j++){
-            if(arr[i]>arr[j]){
+            if(arr[i]>=arr[j]){
                 count++;
             }
         }if(count==(num-i-1))printf("%d ",arr[i]);
