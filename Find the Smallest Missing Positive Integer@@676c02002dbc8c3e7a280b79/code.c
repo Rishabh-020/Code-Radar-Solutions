@@ -36,7 +36,7 @@ int sorted(int arr[],int num){
     }
     for(int i=0;i<num-1;i++){
         if(arr[i]!=arr[i+1]){
-            printf("%d",i+1);
+            printf("%d",arr[i+1]);
             return 0;
         }
     }
