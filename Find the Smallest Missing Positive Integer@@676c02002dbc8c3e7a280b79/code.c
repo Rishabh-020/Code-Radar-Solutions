@@ -25,13 +25,14 @@
 void sorted(int arr[],int num){
     for(int i=0;i<num;i++){
         int select=i;
-        for(int j=0;j<num;j++){
+        for(int j=i+1;j<num;j++){
             if(arr[select]>arr[j]){
-                int temp=j;
-                j=select;
-                select=temp; 
+                select=j;
             }
         }
+        int temp=arr[i];
+        arr[i]=arr[select];
+        arr[select]=temp;
     }
 }
 int main(){
@@ -41,8 +42,8 @@ int main(){
     for(int i=0;i<num;i++)
     scanf("%d",&arr[i]);
     sorted(arr,num);
-    for(int i=0;i<num;i++){
-        if(i!=i+1){
+    for(int i=0;i<num-1;i++){
+        if(arr[i]!=arr[i+1]){
             printf("%d",i+1);
             return 0;
         }
