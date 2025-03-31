@@ -10,5 +10,10 @@ int main() {
             printf("%d",arr[i]);
             return 0;
         }
-    }  
+    } 
+    if(arr[num-1]>arr[num-2]){
+        printf("%d",arr[num-1]);
+        return 0;
+    }
+    printf("-1");
 }
