@@ -1,20 +1,18 @@
 #include <stdio.h>
-
+#include <limit.h>
 int main() {
-   int num;
-   scanf("%d",&num);
-   int arr[num];
-   for(int i=0;i<num;i++){
-    scanf("%d ",&arr[i]);
-   }
-   int max=arr[0],min=arr[0];
-   for(int i=1;i<num;i++){
-    if(max<arr[i]){
-        max=arr[i];
-    }else if(min>arr[i]){
-        min=arr[i];
+    int num;
+    scanf("%d",&num);
+    int arr[num];
+    for(int i=0;i<num;i++)scanf("%d",arr[i]);
+    int min=INT_MAX,max=INT_MIN;
+    for(int i=0;i<num;i++){
+        if(arr[i]<min){
+            min=arr[i];
+        }
+        if(arr[i]>max){
+            max=arr[i];
+        }
     }
-   }
-   printf("%d %d",min,max);
-    return 0;
+    printf("%d %d",min,max);
 }
