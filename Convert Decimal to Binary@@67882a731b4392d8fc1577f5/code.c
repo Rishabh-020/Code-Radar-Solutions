@@ -11,6 +11,6 @@ int main() {
     index++;
     num/=2;
    }
-   for(int i=0;i<index;i++)printf("%d",binary[i]);
+   for(int i=index-1;i>=0;i--)printf("%d",binary[i]);
     return 0;
 }
