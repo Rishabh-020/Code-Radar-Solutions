@@ -5,7 +5,7 @@ int main() {
     int arr[num];
     for(int i=0;i<num;i++)scanf("%d",&arr[i]);
     for(int i=0;i<num-1;i++){
-        if(arr[num]>arr[num+1])printf("%d",arr[num]);
+        if(arr[i]>arr[i+1])printf("%d",arr[i]);
         return 0;
     }
 
