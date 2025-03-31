@@ -9,5 +9,6 @@ int binarySearch(int arr[],int n,int target){
         }else{
             start=mid+1;
         }
+        return -1;
     }   
 }
