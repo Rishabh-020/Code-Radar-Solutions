@@ -3,7 +3,7 @@
 int back_number(int arr[],int num){
     int count=0;
     for(int i=0;i<num;i++){
-        count+=arr[i]*(pow(2,i))
+        count+=arr[i]*(pow(2,i));
     }
 }
 int convert_binary(int num1,int num2){
