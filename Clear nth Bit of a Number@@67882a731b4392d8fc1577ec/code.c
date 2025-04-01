@@ -6,7 +6,7 @@ int power(int a,int b){
         return 1;
     }
     while(b>0){
-        count*=a;;
+        count*=a;
         b--;
     }
     return count;
