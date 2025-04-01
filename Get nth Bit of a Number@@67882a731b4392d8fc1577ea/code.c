@@ -1,5 +1,5 @@
 #include<stdio.h>
-int binary(int num,int num2){
+int convert_binary(int num,int num2){
     int bin[32],index=0;
     while(num>0){
         bin[index]=num%2;
