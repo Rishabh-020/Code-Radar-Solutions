@@ -1,20 +1,20 @@
 #include <stdio.h>
 #include <math.h>
-// int pow(int a,int b){
-//     int count=1;
-//     if(b==0){
-//         return 1;
-//     }
-//     while(b>0){
-//         count*=a;;
-//         b--;
-//     }
-//     return count;
-// }
+int power(int a,int b){
+    int count=1;
+    if(b==0){
+        return 1;
+    }
+    while(b>0){
+        count*=a;;
+        b--;
+    }
+    return count;
+}
 int back_number(int arr[],int num){
     int count=0;
     for(int i=0;i<num;i++){
-        count+=arr[i]*((int)pow(2,i));
+        count+=arr[i]*((int)power(2,i));
     }
     return count;
 }
