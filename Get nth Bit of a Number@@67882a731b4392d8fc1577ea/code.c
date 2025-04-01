@@ -2,7 +2,7 @@
 int binary(int num,int num2){
     int bin[32],index=0;
     while(num>0){
-        binary[index]=num%2;
+        bin[index]=num%2;
         index++;
         num/=2;
     }
