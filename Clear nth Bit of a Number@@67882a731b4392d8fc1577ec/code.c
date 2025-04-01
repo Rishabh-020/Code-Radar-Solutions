@@ -1,5 +1,5 @@
 #include <stdio.h>
-// #include <math.h>
+#include <math.h>
 int pow(int a,int b){
     int count=1;
     if(b==0){
