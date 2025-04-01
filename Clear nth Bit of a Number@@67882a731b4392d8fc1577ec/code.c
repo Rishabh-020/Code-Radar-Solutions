@@ -25,11 +25,11 @@ int convert_binary(int num1,int num2){
         index++;
         num1/=2;
     }
-    if(binary[num2]==0){
-        binary[num2]=1;
-    }else{
+    // if(binary[num2]==0){
+        // binary[num2]=1;
+    // }else{
         binary[num2]=0;
-    }
+    // }
     return back_number(binary,index);
 }
 int main() {
