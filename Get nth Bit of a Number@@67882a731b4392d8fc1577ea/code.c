@@ -6,7 +6,7 @@ int convert_binary(int num,int num2){
         index++;
         num/=2;
     }
-    printf("%d",bin[index-1]);
+    printf("%d",bin[num2]);
 }
 int main(){
     int num1,num2;
