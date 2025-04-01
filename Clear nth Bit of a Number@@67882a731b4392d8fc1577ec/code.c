@@ -1,10 +1,22 @@
 #include <stdio.h>
-#include <math.h>
+// #include <math.h>
+int pow(int a,int b){
+    int count=1;
+    if(b==0){
+        return 1;
+    }
+    while(b>0){
+        count*=a;;
+        b--;
+    }
+    return count;
+}
 int back_number(int arr[],int num){
     int count=0;
     for(int i=0;i<num;i++){
         count+=arr[i]*((int)pow(2,i));
     }
+    return count;
 }
 int convert_binary(int num1,int num2){
     int binary[32],index=0;
@@ -18,7 +30,7 @@ int convert_binary(int num1,int num2){
     }else{
         binary[num2]=0;
     }
-    back_number(binary,index);
+    return back_number(binary,index);
 }
 int main() {
     int num1,num2;
