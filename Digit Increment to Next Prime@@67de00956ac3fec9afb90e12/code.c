@@ -6,5 +6,5 @@ int incrementToPrimeDigits(int num){
         len++;
         num/=10;
     }
-    printf("%d",len);
+    printf("%d\n",len);
 }
