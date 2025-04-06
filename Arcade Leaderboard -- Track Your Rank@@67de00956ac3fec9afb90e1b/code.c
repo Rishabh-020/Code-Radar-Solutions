@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdbool.h>
 int trackPlayerRanks(int ranked[],int num1,int palyer[],int num2,int result[]){
     int count=0,rank=0;
     for(int i=0;i<num1;i++){
