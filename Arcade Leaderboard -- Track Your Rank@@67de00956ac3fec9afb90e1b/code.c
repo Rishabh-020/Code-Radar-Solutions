@@ -14,6 +14,7 @@ int trackPlayerRanks(int ranked[],int num1,int palyer[],int num2,int result[]){
             else continue;
         }
         printf("%d\n",count);
+        count=0;
     }
     
 }
