@@ -1,7 +1,6 @@
 #include<stdio.h>
 int trackPlayerRanks(int ranked[],int num1,int palyer[],int num2,int result[]){
     int count=0;
-    printf("%d",num2);
     for(int k=0;k<num2;k++){
         for(int i=1;i<num1;i++){
             if(i==0){
