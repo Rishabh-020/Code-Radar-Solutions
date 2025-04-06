@@ -3,7 +3,7 @@ int trackPlayerRanks(int ranked[],int num1,int palyer[],int num2,int result[]){
     int count=0,rank=0;
     for(int i=0;i<num1;i++){
         for(int j=i+1;j<num1;j++){
-            if(arr[i]==arr[j]){
+            if(ranked[i]==ranked[j]){
                 rank++;
             }
         }
