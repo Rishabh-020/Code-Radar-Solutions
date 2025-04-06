@@ -34,7 +34,7 @@ int trackPlayerRanks(int ranked[],int num1,int palyer[],int num2,int result[]){
         if(count==0){
             result[k]=final_rank+1;
         }else{
-            result[k]=final_rank-count+1;
+            result[k]=final_rank-count;
         }
     }
 }
