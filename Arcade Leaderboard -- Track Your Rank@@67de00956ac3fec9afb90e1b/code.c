@@ -8,7 +8,8 @@ int trackPlayerRanks(int ranked[],int num1,int palyer[],int num2,int result[]){
             }
         }
     }
-    printf("%d\n",rank);
+    int new_arr[num2];
+    // printf("%d\n",rank);
     int final_rank=num1-rank;
     for(int k=0;k<num2;k++){
         count=0;
@@ -18,9 +19,9 @@ int trackPlayerRanks(int ranked[],int num1,int palyer[],int num2,int result[]){
             }
         }
         if(count==0){
-            printf("%d\n",final_rank+1);
+            new_arr[k]=final_rank+1;
         }else{
-            printf("%d\n",final_rank-count);
+            new_arr[k]=final_rank-count;
         }
     }
     
