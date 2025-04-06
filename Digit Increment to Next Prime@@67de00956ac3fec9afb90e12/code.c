@@ -1,3 +1,4 @@
+#include<stdlib.h>
 #include<stdio.h>
 int incrementToPrimeDigits(int num){
     int len=1;
@@ -7,5 +8,5 @@ int incrementToPrimeDigits(int num){
         num/=10;
     }
     char str[len];
-    sprintf(len,"%s",str);
+    sprintf(str,"%d",num);
 }
