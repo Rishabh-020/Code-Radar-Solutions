@@ -1,4 +1,4 @@
-#include<stio.h>
+#include<stdio.h>
 int trackPlayerRanks(int ranked[],int num1,int palyer[],int num2,int result[]){
     int count=0;
     for(int k=0;k<num2;k++){
