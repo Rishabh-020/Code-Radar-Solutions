@@ -19,9 +19,9 @@ int trackPlayerRanks(int ranked[],int num1,int palyer[],int num2,int result[]){
             }
         }
         if(count==0){
-            new_arr[k]=final_rank+1;
+            result[k]=final_rank+1;
         }else{
-            new_arr[k]=final_rank-count;
+            result[k]=final_rank-count;
         }
     }
     for(int i=0;i<num1;i++)printf("%d\n",new_arr[i]);
