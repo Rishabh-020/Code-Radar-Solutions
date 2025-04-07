@@ -7,9 +7,9 @@ int main(){
         return 0;
     }
     int len=strlen(str),count=0,inword=0;
-    if(str[len-1]=='\n'){
-        str[len-1]='\0';
-    }
+    // if(str[len-1]=='\n'){
+    //     str[len-1]='\0';
+    // }
     for(int i=0;str[i]!='\0';i++){
         if(str[i]==' '||str[i]=='\0'){
             inword=0;
