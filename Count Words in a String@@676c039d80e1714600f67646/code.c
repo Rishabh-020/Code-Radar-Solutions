@@ -6,7 +6,7 @@ int main(){
         printf("%d",0);
         return 0;
     }
-    int len=strlen(str),count=0,inword=0;
+    int count=0,inword=0;
     // if(str[len-1]=='\n'){
     //     str[len-1]='\0';
     // }
