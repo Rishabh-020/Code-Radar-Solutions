@@ -2,7 +2,7 @@
 #include<string.h>
 
 char palindrome(char arr[]){
-    int len=strlen(str);
+    int len=strlen(arr);
     for(int i=0;i<len/2;i++){
         if(arr[i]!=arr[len-i]){
             return 0;
