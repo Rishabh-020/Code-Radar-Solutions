@@ -14,7 +14,7 @@ int main(){
         if(str[i]==' '||str[i]=='\0'){
             inword=0;
             count++;
-        // }else if(inword==0){
+        }//else if(inword==0){
         //     inword=1;
         //     count++;
         // }
