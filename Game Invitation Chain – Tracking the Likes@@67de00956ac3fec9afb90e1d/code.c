@@ -5,7 +5,7 @@ int totalLikes(int n){
     if(n==1){
         return 2;
     }
-    for(int i=1;i<n;i++){
+    for(int i=1;i<=n;i++){
         cal=find/2;
         zero=cal*3;
         find=zero;
