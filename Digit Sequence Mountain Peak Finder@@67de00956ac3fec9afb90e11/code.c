@@ -16,13 +16,13 @@ int len(int num){
         i++;
         find/=10;
     }
-    int find=-1;
+    int now=-1;
     for(int i=1;i<len-1;i++){
         if(arr[i]>arr[i+1] && arr[i]>arr[i-1]){
-            find=arr[i];
+            now=arr[i];
         }
     }
-    return find;
+    return now;
 }
 int mountainPeak(int num){
     len(num);
