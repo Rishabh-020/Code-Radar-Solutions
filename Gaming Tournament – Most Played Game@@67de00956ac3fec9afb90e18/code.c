@@ -8,7 +8,7 @@ int mostPlayedGame(int arr[],int num){
         if(freq[arr[i]]>max){
             max=arr[i];
             frequecy=freq[arr[i]];
-        }else if(frequecy==freq[arr[i]] && arr[i]>max){
+        }else if(frequecy==freq[arr[i]] && arr[i]<max){
             max=arr[i];
         }
     }
