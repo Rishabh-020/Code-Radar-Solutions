@@ -3,11 +3,13 @@ int mostPlayedGame(int arr[],int num){
     for(int i=0;i<num;i++){
         freq[arr[i]]++;
     }
-    int max=0;
+    int max=0,frequecy-0;
     for(int i=0;i<num;i++){
-        if(freq[arr[i]]>max && arr[i]<min){
+        if(freq[arr[i]]>max){
             max=arr[i];
-            // min=max;
+            frequecy=freq[arr[i]];
+        }else if(frequecy==freq[arr[i]] && arr[i]<max){
+            max=arr[i];
         }
     }
     return max;
