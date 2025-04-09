@@ -1,4 +1,4 @@
-int mostPlayedGame(int arr,int num){
+int mostPlayedGame(int arr[],int num){
     int freq[1001]={0},min=num;
     for(int i=0;i<num;i++){
         freq[arr[i]]++;
