@@ -19,7 +19,7 @@ int len(int num){
     int find=-1;
     for(int i=1;i<len-1;i++){
         if(arr[i]>arr[i+1] && arr[i]>arr[i-1]){
-            int find=arr[i];
+            find=arr[i];
         }
     }
     return find;
