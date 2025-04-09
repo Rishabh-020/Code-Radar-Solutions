@@ -1,5 +1,5 @@
 int len(int num){
-    int len=0
+    int len=0;
     while(num>0){
         // int N=num%10;
         // arr[i]=N;
