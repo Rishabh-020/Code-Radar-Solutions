@@ -33,5 +33,6 @@ int incrementToPrimeDigits(int num){
     for(int i=0;i<num;i++){
         int pass=arr[i];
         function(pass);
+        arr[i]=pass;
     }
 }
