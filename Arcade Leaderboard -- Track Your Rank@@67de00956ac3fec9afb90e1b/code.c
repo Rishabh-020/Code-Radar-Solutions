@@ -23,7 +23,7 @@ int trackPlayerRanks(int ranked[],int num1,int palyer[],int num2,int result[]){
             }
         }
     }
-    for(int i=0;i<size;i++)printf("%d",unique[i]);
+    for(int i=0;i<size;i++)printf("%d ",unique[i]);
     int final_rank=num1-rank;
     for(int k=0;k<num2;k++){
         count=0;
