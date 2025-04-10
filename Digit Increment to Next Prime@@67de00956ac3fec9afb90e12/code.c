@@ -35,4 +35,5 @@ int incrementToPrimeDigits(int num){
         function(pass);
         arr[i]=pass;
     }
+    return *arr;
 }
