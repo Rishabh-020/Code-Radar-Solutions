@@ -5,7 +5,7 @@ int findKthMissing(int arr[],int num,int k){
         new_arr[i]=0;
     }
     for(int i=0;i<arr[num-1];i++){
-        ++new_arr[i];
+        new_arr[i]=i+1;
         printf("%d ",new_arr[i]);
     }
     return arr[num-1]+1;
