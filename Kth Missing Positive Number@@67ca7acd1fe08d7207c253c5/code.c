@@ -1,14 +1,13 @@
 int findKthMissing(int arr[],int num,int k){
-    int missing=1,kth=0;
+    int missing=0,kth=0;
     for(int i=0;;i++){
-        if(arr[i]==missing){
-            continue;
+        if(missing<num && arr[missing]==i){
+            missing++;
         }
         else{
-            missing++;
             kth++;
             if(kth==k){
-                return missing;
+                return i;
             }
         }
         
