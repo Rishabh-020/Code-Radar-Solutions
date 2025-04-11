@@ -8,5 +8,18 @@ int findKthMissing(int arr[],int num,int k){
         new_arr[i]=i+1;
         printf("%d ",new_arr[i]);
     }
-    return arr[num-1]+1;
+    for(int i=0;i<arr[num-1];i++){
+        for(int j=i;j<num;j++){
+            if(new_arr[i]==arr[j]){
+                value=new_arr[i];
+                break;
+            }else{
+                kth++;
+                value=new_arr[i];
+                break;
+            }
+        }
+    }
+    return value;
+    // return arr[num-1]+1;
 }
