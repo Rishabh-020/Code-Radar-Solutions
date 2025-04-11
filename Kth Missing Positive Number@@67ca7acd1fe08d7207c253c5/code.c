@@ -16,7 +16,7 @@ int findKthMissing(int arr[],int num,int k){
             }else{
                 kth++;
                 value=new_arr[i];
-                break;
+                // break;
             }
         }
     }
