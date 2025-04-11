@@ -1,7 +1,14 @@
 int findKthMissing(int arr[],int n,int k){
-    // int hash[100];
-    // for(int i=0;i<arr[n-1];i++){
-    //     hash[arr[i]]++;
-    // }
+    int kth=0,value=1;
+    for(int i=0;i<num;i++){
+        if(kth==k){
+            printf("%d",value);
+            return 0;
+        }
+        if(value!=arr[i]){
+            kth++;
+            value++;
+        }else if(value==arr[i])value=arr[i];
+    }
     return -1;
 }
