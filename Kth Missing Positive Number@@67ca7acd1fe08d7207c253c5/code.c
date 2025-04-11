@@ -10,5 +10,5 @@ int findKthMissing(int arr[],int num,int k){
             value++;
         }else if(value==arr[i])value=arr[i];
     }
-    return -1;
+    // return -1;
 }
