@@ -8,7 +8,7 @@ int findKthMissing(int arr[],int num,int k){
             missing++;
             kth++;
             if(kth==k){
-                return kth;
+                return missing;
             }
         }
         
